@@ -19,19 +19,24 @@ Dave recommends keep all. Update landuse and ndep for 2090
 
 Copying and adapting Isla's setupcase.sh
  - /glade/u/home/islas/MAPP/runscripts/2020/setupcase.sh
+
 Copying and adapting Isla's transferrestarts.sh
  - /glade/u/home/islas/MAPP/runscripts/2020/transferrestarts.sh
  - I don't have LENS2 restarts access
  - Isla re-synced the restarts to her scratch
  - She needed to also chmod
+
 Copying the namelists and sourcemods
  - /glade/u/home/islas/MAPP/runscripts/2020/
+
 Editing the SST xmlchanges
  - ./xmlchange SSTICE_YEAR_ALIGN='2020'
  - ./xmlchange SSTICE_YEAR_START='0'
  - ./xmlchange SSTICE_YEAR_END='0'
+
 Update the SSTFILE
  - /glade/work/islas/inputdata/MAPP/SSTs/sstice_LENS2_second50_clim2010to2030_diddled_ts.nc
+
 Move nudging files
  - from /glade/campaign/cgd/cas/islas/MAPP/ERA5_2020_nudginginput
  - update user_nl_cam to find them in my scratch space
