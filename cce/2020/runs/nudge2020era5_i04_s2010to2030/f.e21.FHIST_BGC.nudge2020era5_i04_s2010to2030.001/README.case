@@ -1,0 +1,42 @@
+2022-03-30 14:08:08: ./create_newcase --case /glade/u/home/djk2120/droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 --compset FHIST_BGC --res f09_f09_mg17 --mach cheyenne --project P04010022
+ ---------------------------------------------------
+2022-03-30 14:08:08: Compset longname is HIST_CAM60_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_CISM2%NOEVOLVE_SWAV
+ ---------------------------------------------------
+2022-03-30 14:08:08: Compset specification file is /glade/work/islas/cesm2.1.4-rc.08/components/cam//cime_config/config_compsets.xml
+ ---------------------------------------------------
+2022-03-30 14:08:08: Pes     specification file is /glade/work/islas/cesm2.1.4-rc.08/components/cam//cime_config/config_pes.xml
+ ---------------------------------------------------
+2022-03-30 14:08:08: Forcing is Historic transient 
+ ---------------------------------------------------
+2022-03-30 14:08:08: Using None coupler instances
+ ---------------------------------------------------
+2022-03-30 14:08:08: Component ATM is CAM cam6 physics:
+ ---------------------------------------------------
+2022-03-30 14:08:08: ATM_GRID is 0.9x1.25
+ ---------------------------------------------------
+2022-03-30 14:08:08: Component LND is clm5.0:BGC (vert. resol. CN and methane) with prognostic crop:
+ ---------------------------------------------------
+2022-03-30 14:08:08: LND_GRID is 0.9x1.25
+ ---------------------------------------------------
+2022-03-30 14:08:08: Component ICE is Sea ICE (cice) model version 5 :prescribed cice
+ ---------------------------------------------------
+2022-03-30 14:08:08: ICE_GRID is 0.9x1.25
+ ---------------------------------------------------
+2022-03-30 14:08:08: Component OCN is DOCN   prescribed ocean mode
+ ---------------------------------------------------
+2022-03-30 14:08:08: OCN_GRID is 0.9x1.25
+ ---------------------------------------------------
+2022-03-30 14:08:08: Component ROF is MOSART: MOdel for Scale Adaptive River Transport
+ ---------------------------------------------------
+2022-03-30 14:08:08: ROF_GRID is r05
+ ---------------------------------------------------
+2022-03-30 14:08:08: Component GLC is cism2 (default, higher-order, can run in parallel):cism ice evolution turned off (this is the standard configuration unless you're explicitly interested in ice evolution):
+ ---------------------------------------------------
+2022-03-30 14:08:08: GLC_GRID is gland4
+ ---------------------------------------------------
+2022-03-30 14:08:08: Component WAV is Stub wave component
+ ---------------------------------------------------
+2022-03-30 14:08:08: WAV_GRID is null
+ ---------------------------------------------------
+2022-03-30 14:08:08: ESP_GRID is None
+ ---------------------------------------------------

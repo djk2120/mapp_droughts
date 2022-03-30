@@ -1,0 +1,37 @@
+2022-03-30 14:08:08: case.setup starting 
+ ---------------------------------------------------
+2022-03-30 14:08:10: case.setup success 
+ ---------------------------------------------------
+2022-03-30 14:08:10: xmlchange success <command> ./xmlchange RUN_TYPE=hybrid  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:10: xmlchange success <command> ./xmlchange RUN_STARTDATE=2020-04-01  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:11: xmlchange success <command> ./xmlchange RUN_REFCASE=b.e21.BHISTsmbb.f09_g17.LE2-1011.001  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:11: xmlchange success <command> ./xmlchange RUN_REFDATE=2011-04-01  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:11: xmlchange success <command> ./xmlchange RUN_REFDIR=/glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:12: xmlchange success <command> ./xmlchange STOP_N=9  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:12: xmlchange success <command> ./xmlchange STOP_OPTION=nmonths  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:13: xmlchange success <command> ./xmlchange JOB_QUEUE=economy  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:13: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=02:00:00 --subgroup=case.run  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:13: xmlchange success <command> ./xmlchange SSTICE_YEAR_ALIGN=2020  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:14: xmlchange success <command> ./xmlchange SSTICE_YEAR_START=0  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:14: xmlchange success <command> ./xmlchange SSTICE_YEAR_END=0  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:14: xmlchange success <command> ./xmlchange SSTICE_DATA_FILENAME=/glade/work/islas/inputdata/MAPP/SSTs/sstice_LENS2_second50_clim2010to2030_diddled_ts.nc  </command>
+ ---------------------------------------------------
+2022-03-30 14:08:15: xmlchange success <command> ./xmlchange PROJECT=P04010022  </command>
+ ---------------------------------------------------
+2022-03-30 14:09:51: case.build starting 
+ ---------------------------------------------------
+2022-03-30 14:09:51: case.build error 
+[Errno 13] Permission denied: '/glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.ocn.restart'
+ ---------------------------------------------------
