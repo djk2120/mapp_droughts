@@ -1,8 +1,0 @@
-!-----------daily averages
-use_init_interp=.true.
-
-hist_fincl2='SOILWATER_10CM','SOILLIQ','QVEGE','QVEGT','QSOIL','FSNO','ALBD','ALBGRD','ALBGRI','ALBI','U10','SNOWICE','SNOWLIQ','FGR','FGR12','SNOW_DEPTH','TG','TWS','QRUNOFF','QOVER','QDRAI','QIRRIG','QSNOMELT','TLAI','NEE','NPP','NBP','GPP','BTRANMN','VEGWPLN','VEGWPPD','RAIN','SNOW','H2OCAN','QINTR','WA','QCHARGE','AR','HR','AGNPP','BGNPP','FPSN','TOTSOMC_1m','FGEV'
-
-hist_nhtfrq=0, -24
-hist_avgflag_pertape='A','A'
-

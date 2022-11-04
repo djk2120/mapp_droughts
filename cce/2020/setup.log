@@ -1,0 +1,692 @@
+Submitting command to PBS using account P08010000:
+    ./setupcase.sh
+
+Waiting for job 6995973.chadmin1.ib0.cheyenne.ucar.edu to start ... 
+
+
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1011.001
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001
+Compset longname is HIST_CAM60_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_CISM2%NOEVOLVE_SWAV
+Compset specification file is /glade/work/islas/cesm2.1.4-rc.08/cime/../components/cam//cime_config/config_compsets.xml
+Compset forcing is Historic transient 
+ATM component is CAM cam6 physics:
+LND component is clm5.0:BGC (vert. resol. CN and methane) with prognostic crop:
+ICE component is Sea ICE (cice) model version 5 :prescribed cice
+OCN component is DOCN   prescribed ocean mode
+ROF component is MOSART: MOdel for Scale Adaptive River Transport
+GLC component is cism2 (default, higher-order, can run in parallel):cism ice evolution turned off (this is the standard configuration unless you're explicitly interested in ice evolution):
+WAV component is Stub wave component
+ESP component is 
+Pes     specification file is /glade/work/islas/cesm2.1.4-rc.08/cime/../components/cam//cime_config/config_pes.xml
+Compset specific settings: name is RUN_STARTDATE and value is 1979-01-01
+Compset specific settings: name is SSTICE_DATA_FILENAME and value is $DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2017_c180507.nc
+Compset specific settings: name is SSTICE_GRID_FILENAME and value is $DIN_LOC_ROOT/share/domains/domain.ocn.fv0.9x1.25_gx1v7.151020.nc
+Compset specific settings: name is SSTICE_YEAR_END and value is 2016
+Compset specific settings: name is RUN_TYPE and value is hybrid
+Compset specific settings: name is RUN_REFCASE and value is b.e20.BHIST.f09_g17.20thC.297_01_v3
+Compset specific settings: name is RUN_REFDATE and value is 1979-01-01
+Compset specific settings: name is RUN_REFDIR and value is cesm2_init
+Machine is cheyenne
+Pes setting: grid match    is a%0.9x1.25 
+Pes setting: machine match is cheyenne 
+Pes setting: grid          is a%0.9x1.25_l%0.9x1.25_oi%0.9x1.25_r%r05_g%gland4_w%null_m%gx1v7 
+Pes setting: compset       is HIST_CAM60_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_CISM2%NOEVOLVE_SWAV 
+Pes setting: tasks       is {'NTASKS_ATM': 360, 'NTASKS_LND': 360, 'NTASKS_ROF': 360, 'NTASKS_ICE': 360, 'NTASKS_OCN': 360, 'NTASKS_GLC': 360, 'NTASKS_WAV': 360, 'NTASKS_CPL': 360} 
+Pes setting: threads     is {'NTHRDS_ATM': 3, 'NTHRDS_LND': 3, 'NTHRDS_ROF': 3, 'NTHRDS_ICE': 3, 'NTHRDS_OCN': 3, 'NTHRDS_GLC': 3, 'NTHRDS_WAV': 3, 'NTHRDS_CPL': 3} 
+Pes setting: rootpe      is {'ROOTPE_ATM': 0, 'ROOTPE_LND': 0, 'ROOTPE_ROF': 0, 'ROOTPE_ICE': 0, 'ROOTPE_OCN': 0, 'ROOTPE_GLC': 0, 'ROOTPE_WAV': 0, 'ROOTPE_CPL': 0} 
+Pes setting: pstrid      is {} 
+Pes other settings: {'MAX_MPITASKS_PER_NODE': '36'}
+Pes comments: none
+ Compset is: HIST_CAM60_CLM50%BGC-CROP_CICE%PRES_DOCN%DOM_MOSART_CISM2%NOEVOLVE_SWAV 
+ Grid is: a%0.9x1.25_l%0.9x1.25_oi%0.9x1.25_r%r05_g%gland4_w%null_m%gx1v7 
+ Components in compset are: ['cam', 'clm', 'cice', 'docn', 'mosart', 'cism', 'swav', 'sesp', 'drv', 'dart'] 
+
+This is a CESM scientifically supported compset at this resolution.
+
+No charge_account info available, using value from PROJECT
+No project info available
+cesm model version found: cesm2.1.4-rc.08
+Batch_system_type is pbs
+job is case.run USER_REQUESTED_WALLTIME None USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+job is case.st_archive USER_REQUESTED_WALLTIME None USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+ Creating Case directory /glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME None USER_REQUESTED_QUEUE None WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+Creating user_nl_xxx files for components and cpl
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Building case in directory /glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001
+sharedlib_only is False
+model_only is False
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Generating component namelists as part of build
+ - Prestaging REFCASE (/glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/) to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/run
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.ocn.restart
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.ice
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.lnd
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.rof
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.atm
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.glc
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.ocn.ovf
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.drv
+Copy rpointer /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/rpointer.ocn.tavg
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.pop.rh.ecosys.nyear1.2011-04-01-00000.nc
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.cam.r.2011-04-01-00000.nc
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.cpl.r.2011-04-01-00000.nc
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.clm2.r.2011-04-01-00000.nc
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.cice.r.2011-04-01-00000.nc
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.pop.r.2011-04-01-00000.nc
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.pop.ro.2011-04-01-00000
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.cism.r.2011-04-01-00000.nc
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.ww3.r.2011-04-01-00000
+Staging file /glade/scratch/islas/MAPP/initdir/1011.001/2011-04-01-00000/b.e21.BHISTsmbb.f09_g17.LE2-1011.001.mosart.r.2011-04-01-00000.nc
+Creating component namelists
+   Calling /glade/work/islas/cesm2.1.4-rc.08/components/cam//cime_config/buildnml
+     ...calling cam buildcpp to set build time options
+CAM namelist copy: file1 /glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/Buildconf/camconf/atm_in file2 /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/run/atm_in 
+   Calling /glade/work/islas/cesm2.1.4-rc.08/components/clm//cime_config/buildnml
+   Calling /glade/work/islas/cesm2.1.4-rc.08/components/cice//cime_config/buildnml
+     ...buildnml calling cice buildcpp to set build time options
+   Calling /glade/work/islas/cesm2.1.4-rc.08/cime/src/components/data_comps/docn/cime_config/buildnml
+   Calling /glade/work/islas/cesm2.1.4-rc.08/components/mosart//cime_config/buildnml
+   Running /glade/work/islas/cesm2.1.4-rc.08/components/cism//cime_config/buildnml 
+   Calling /glade/work/islas/cesm2.1.4-rc.08/cime/src/components/stub_comps/swav/cime_config/buildnml
+   Calling /glade/work/islas/cesm2.1.4-rc.08/cime/src/components/stub_comps/sesp/cime_config/buildnml
+   Calling /glade/work/islas/cesm2.1.4-rc.08/cime/src/drivers/mct/cime_config/buildnml
+   NOTE: ignoring setting of rof2ocn_ice_rmapname=idmap in seq_maps.rc
+   NOTE: ignoring setting of rof2ocn_liq_rmapname=idmap in seq_maps.rc
+Finished creating component namelists
+Building gptl with output to file /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/gptl.bldlog.221027-112520
+   Calling /glade/work/islas/cesm2.1.4-rc.08/cime/src/build_scripts/buildlib.gptl
+Building mct with output to file /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/mct.bldlog.221027-112520
+   Calling /glade/work/islas/cesm2.1.4-rc.08/cime/src/build_scripts/buildlib.mct
+Building pio with output to file /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/pio.bldlog.221027-112520
+   Calling /glade/work/islas/cesm2.1.4-rc.08/cime/src/build_scripts/buildlib.pio
+Component pio build complete with 2 warnings
+Building csm_share with output to file /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/csm_share.bldlog.221027-112520
+   Calling /glade/work/islas/cesm2.1.4-rc.08/cime/src/build_scripts/buildlib.csm_share
+Component csm_share build complete with 20 warnings
+         - Building clm4_5/clm5_0 Library 
+Building lnd with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/lnd.bldlog.221027-112520
+Component lnd build complete with 6 warnings
+clm built in 210.419206 seconds
+Building atm with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/atm.bldlog.221027-112520
+Building ice with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/ice.bldlog.221027-112520
+Building ocn with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/ocn.bldlog.221027-112520
+Building rof with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/rof.bldlog.221027-112520
+Building glc with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/glc.bldlog.221027-112520
+Building wav with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/wav.bldlog.221027-112520
+Building esp with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/esp.bldlog.221027-112520
+sesp built in 7.276025 seconds
+swav built in 7.375635 seconds
+docn built in 14.980390 seconds
+mosart built in 74.084891 seconds
+Component glc build complete with 3 warnings
+cism built in 390.832724 seconds
+Component atm build complete with 14 warnings
+cam built in 428.483546 seconds
+Component ice build complete with 1 warnings
+cice built in 461.155753 seconds
+Building cesm with output to /glade/scratch/djk2120/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001/bld/cesm.bldlog.221027-112520 
+Time spent not building: 7.359101 sec
+Time spent building: 990.650121 sec
+MODEL BUILD HAS FINISHED SUCCESSFULLY
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.002
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1031.002
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.002
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.002 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.002/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.003
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1051.003
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.003
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.003 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.003/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.004
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1071.004
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.004
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.004 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.004/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.005
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1091.005
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.005
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.005 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.005/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.006
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1111.006
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.006
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.006 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.006/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.007
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1131.007
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.007
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.007 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.007/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.008
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1151.008
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.008
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.008 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.008/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.009
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1171.009
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.009
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.009 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.009/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.010
+2011 2015
+b.e21.BHISTsmbb.f09_g17.LE2-1191.010
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.010
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.010 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.010/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.011
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1011.001
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.011
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.011 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.011/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.012
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1031.002
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.012
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.012 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.012/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.013
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1051.003
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.013
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.013 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.013/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.014
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1071.004
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.014
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.014 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.014/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.015
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1091.005
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.015
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.015 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.015/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.016
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1111.006
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.016
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.016 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.016/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.017
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1131.007
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.017
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.017 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.017/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.018
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1151.008
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.018
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.018 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.018/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.019
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1171.009
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.019
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.019 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.019/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.020
+2013 2016
+b.e21.BHISTsmbb.f09_g17.LE2-1191.010
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.020
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.020 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.020/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.021
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1011.001
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.021
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.021 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.021/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.022
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1031.002
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.022
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.022 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.022/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.023
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1051.003
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.023
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.023 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.023/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.024
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1071.004
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.024
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.024 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.024/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.025
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1091.005
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.025
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.025 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.025/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.026
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1111.006
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.026
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.026 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.026/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.027
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1131.007
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.027
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.027 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.027/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.028
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1151.008
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.028
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.028 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.028/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.029
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1171.009
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.029
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.029 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.029/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.030
+2015 2017
+b.e21.BSSP370smbb.f09_g17.LE2-1191.010
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.030
+ Successfully created new case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.030 from clone case f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.001 
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+/glade/u/home/djk2120/mapp_droughts/cce/2020/runs/nudge2020era5_i04_s2010to2030/f.e21.FHIST_BGC.nudge2020era5_i04_s2010to2030.030/env_mach_specific.xml already exists, delete to replace
+job is case.run USER_REQUESTED_WALLTIME 03:00:00 USER_REQUESTED_QUEUE regular WALLTIME_FORMAT %H:%M:%S
+Creating batch scripts
+Writing case.run script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.case.run
+Creating file .case.run
+Writing case.st_archive script from input template /glade/work/islas/cesm2.1.4-rc.08/cime/config/cesm/machines/template.st_archive
+Creating file case.st_archive
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Machine/Decomp/Pes configuration has already been done ...skipping
+If an old case build already exists, might want to run 'case.build --clean' before building
+You can now run './preview_run' to get more info on how your case will be run

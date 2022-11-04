@@ -1,4 +1,4 @@
-ncdata='/glade/scratch/islas/MAPP/initdir/atmosphere/b.e21.BSSP370.f09_g17.generaterestarts.001.cam.i.2015-04-01-00000.nc'
+ncdata='XNCDATAX'
 
 !----h1 = daily averages surface
 fincl2='PRECT:A','PRECC:A','Z500:A','PSL:A','TREFHT:A','QREFHT:A','RHREFHT:A','TREFHTMX:X','TREFHTMN:M','SHFLX:A','LHFLX:A','QFLX:A','TBOT:A','QBOT:A','UBOT:A','VBOT:A','PS:A','T850:A','Q850:A','TS:A','PBLH:A','FLNS:A','FLDS:A','FSNS:A','FSDS:A','CAPE:A','CIN:A','CLDHGH:A','CLDMED:A','CLDLOW:A','OMEGA500:A','WSPDSRFAV:A','WSPDSRFMX:X'
@@ -43,11 +43,11 @@ fincl6lonlat='255e_33n','248e_33n','240e_37n','255e_39n','245e_39n'
  LTend_V=.false.
  LTend_Q=.false.
  LTend_PS=.false.
- Nudge_lat1=28.
- Nudge_lat2=47.
+ Nudge_lat1=-80.
+ Nudge_lat2=80.
  Nudge_latdelta=10.
- Nudge_lon1=230.
- Nudge_lon2=264.
+ Nudge_lon1=0.
+ Nudge_lon2=350.
  Nudge_londelta=10.
  NudgeU_taper=.false.
  NudgeV_taper=.false.
