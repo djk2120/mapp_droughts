@@ -1,3 +1,6 @@
 *~
 *.nc
 *ipynb_checkpoints*
+*.aux
+*synctex*
+*.log
