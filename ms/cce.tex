@@ -31,30 +31,46 @@
 %%%%%%%
 
 \draftfalse
-
-
-
 \journalname{Geophysical Research Letters}
 
 
 \begin{document}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  TITLE
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{=enter title here=}
+\title{Constrained Circulation Ensemble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  AUTHORS AND AFFILIATIONS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\authors{D. Kennedy\affil{1,2}, D. M. Lawrence\affil{1}, and I. R. Simpson\affil{1}}
-
-\affiliation{1}{Climate and Global Dynamics Laboratory, NSF National Center for Atmospheric Research, Boulder, CO}
-\affiliation{2}{Earth Research Institute, University of California Santa Barbara, Santa Barbara, CA}
-
+\authors{D. Kennedy\affil{1,2}, D. M. Lawrence\affil{1}, I. R. Simpson\affil{1}}
+\affiliation{1}{Climate and Global Dynamics Laboratory, NSF-NCAR}
+\affiliation{2}{Earth Research Institute, University of California Santa Barbara}
 \correspondingauthor{Daniel Kennedy}{djk2120@ucar.edu}
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% KEY POINTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  List up to three key points (at least one is required)
+%  Key Points summarize the main points and conclusions of the article
 %  Each must be 140 characters or fewer with no special characters or punctuation and must be complete sentences
 
-
+% Example:
+% \begin{keypoints}
+% \item	List up to three key points (at least one is required)
+% \item	Key Points summarize the main points and conclusions of the article
+% \item	Each must be 140 characters or fewer with no special characters or punctuation and must be complete sentences
+% \end{keypoints}
 
 \begin{keypoints}
 \item enter point 1 here
@@ -62,10 +78,29 @@
 \item enter point 3 here
 \end{keypoints}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  ABSTRACT and PLAIN LANGUAGE SUMMARY
+%
+% A good Abstract will begin with a short description of the problem
+% being addressed, briefly describe the new data or analyses, then
+% briefly states the main conclusion(s) and how they are supported and
+% uncertainties.
 
+% The Plain Language Summary should be written for a broad audience,
+% including journalists and the science-interested public, that will not have 
+% a background in your field.
+%
+% A Plain Language Summary is required in GRL, JGR: Planets, JGR: Biogeosciences,
+% JGR: Oceans, G-Cubed, Reviews of Geophysics, and JAMES.
+% see http://sharingscience.agu.org/creating-plain-language-summary/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% \begin{abstract} starts the second page
 
 \begin{abstract}
-The 2020 Southwest U.S. drought was the driest summer of the instrumented record and part of a 20-year megadrought with severe consequences for water resources. Despite biases in the fully coupled CESM2, we were able to reproduce observed precipitation in a constrained circulation framework, by nudging the large scale circulation to reanalysis winds. Previous work has attributed the precipitation anomalies primarily to natural variability as opposed to radiative forcing or warming. We ported the 2020 circulation pattern to past and future climates to understand if warming influences monsoon period precipitation. Ensemble mean precipitation was 4mm higher under pre-industrial conditions, which is relatively small compared to the 2020 drought anomaly of -66mm, confirming that warming was at most a small contributor to monsoon failure. Ensemble mean precipitation was another 9mm lower under end-of-century conditions, indicating that future warming could further exacerbate Southwest U.S. droughts. However, we found that our future conditions constrained circulation ensemble was significantly drier than any simulations in a fully coupled framework, indicating that large-scale feedbacks may disallow this circulation pattern in the future.
+[ enter your Abstract here ]
 \end{abstract}
 
 \section*{Plain Language Summary}
@@ -76,68 +111,57 @@ https://www.agu.org/Share-and-Advocate/Share/Community/Plain-language-summary
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%  BODY TEXT
+%  OUTLINE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Outline and in flux}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  INTRODUCTION
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+%Text here ===>>>
+Models incorrectly predict positive vapor pressure trends in semi-arid regions \cite{simpson2024}.
 
 
-
-Coupled ESMs have not captured humidity trends in semi-arid ecosystems \cite{simpson2024}.
-
-Though ESMs show a slight increase in spring precipitation in the region, there does not seem to be an attributable influence of climate change on NAM precipitation. Previous work indicates that the 2020 SWUS drought was not exacerbated by climate change, but was rather a result of  internal atmospheric variability \cite{seager2022}. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  METHODS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Methods}
+%Text here ===>>>
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  DISCUSSION
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Results and Discussion}
-\subsection{Simulating the 2020 SWUS drought}
-
-\subsection{Porting the 2020 circulation to past and future climates}
-
-\subsection{Similarities and differences between the CCE and the CESM2-LE}
-ET$\sim$SM looks the same. But P$\sim$ET looks a bit different. The CCE mean looks to be in a reasonable spot, roughly speaking, but the partial response of P to varying ET (via land initialization) looks much smaller than in the fully coupled model. This would seem to indicate that the coupling of SM->ET is agnostic to the broader circulation, whereas P is not simply determined by the local ET. In the coupled model we tend to see an 18mm reduction in P for a 10mm reduction in ET, but in the CCE it looks more like 5mm P per 10mm ET. In the coupled model the circulation associated with 140mm ET may be quite different from the circulation that results in 120mm ET, in addition to any differences in the initial conditions. In the CCE, only the initial conditions are different, and the large-scale circulation is following observations. When CCE goes from ET of 120 to 100, the broader circulation still provides a relatively equivalent flux of water to the region (in fact slightly higher), which helps support the precipitation from falling drastically. In the coupled model, when ET goes from 140 to 120mm, it is probably largely driven by a change to a more diverging circulation, whereby the precip is robbed of the convergence flux as well as the associated reductions in ET flux. 
-
-Does this invalidate inference from the CCE? No, it just means that any takeaways are conditional to the given circulation pattern. In the case of understanding sensitivity to initial conditions in the 2020 ensemble, the experimental framework is probably quite helpful. In the case of the analogue simulations, it's slightly more complicated, because warmer or colder climates may not be able to develop this circulation pattern. Towards this end, the fact that the 2090 ensemble is so much drier than anything seen in the fully coupled model is hard to overlook. This would seem to indicate that CESM2 predicts changes in circulation that would disallow the droughts we are simulating in the 2090 CCE. Further work to understand the mechanisms underpinning may be interesting, especially given the tendency across many coupled models to produce aberrant VP trends in semi-arid ecosystems. 
+%Text here ===>>>
 
 
-Why is the CCE drier than the LE in 2090?
 
-
-\subsection{Inference capabilities for extreme droughts}
-
-
-\begin{figure}
-\includegraphics[width=30pc]{../figs/main/precip.pdf}
-\caption{The constrained circulation ensemble provides a reasonable match for precipitation observations during the 2020 SWUS drought, despite  biases in the fully coupled model. Shaded areas span the 5th to 95th percentiles across pooled ensemble-years (CESM2: 1980-2020, CCE: 2020 only), or in the case of the GPCP observational product, simply across years (1980-2020). Solid lines denote the climatological averages. The GPCP observed precipitation during 2020 is shown as the dotted line. Additional panel with experimental protocol and perhaps some dynamical notion tk.}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=40pc]{../figs/main/scatter_ET_P.png}
-\caption{Monsoon period precipitation vs. ET in the CCE and a dry subset of the CESM2-LE from three different time periods. ET and Precip seem to decline in both ensembles in response to climate change forcing. Printed numbers indicate the various ensemble means. Two asterisks indicate a given ensemble mean is distinguishable from both the other time period means at the p$<$0.05 level. One asterisk indicates it is distinguishable from just one of the other time periods. The dry subset of the CESM2-LE is defined as the 3\% driest ensemble years from the given time period based on JAS 10cm soil moisture (see methods). Relabeled as 1850 tk.}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=35pc]{../figs/main/contours_ET_SW.pdf}
-\caption{Soil moisture (10cm) vs. ET in the CCE (dots) and the CESM2-LE (scatter density heat map) for three time periods. The CCE appears fully consistent with the coupled model with regard to this relationship, demonstrating an intensification of the hydrological cycle in the region. Note that the CCE does however appear significantly drier relative to the LE in 2090 as compared to 1850 or 2020. A second set of plots with something less clean looking potentially tk.}
-\end{figure}
-
-
-\begin{figure}
-\includegraphics[width=35pc]{../figs/main/contours_PREC_ET.pdf}
-\caption{Soil moisture (10cm) vs. ET in the CCE (dots) and the CESM2-LE (scatter density heat map) for three time periods. The CCE appears fully consistent with the coupled model with regard to this relationship, demonstrating an intensification of the hydrological cycle in the region. Note that the CCE does however appear significantly drier relative to the LE in 2090 as compared to 1850 or 2020. A second set of plots with something less clean looking potentially tk.}
-\end{figure}
-
-
-\begin{figure}
-\includegraphics[width=40pc]{../figs/main/cesm2le_water_anomalies.png}
-\caption{Monsoon period precipitation and ET anomalies (relative to 1970-1989) from the CESM2-LE from various ensemble subsets delineated based on 10cm soil moisture. Whereas the ensemble mean (turquoise) shows increases in precipitation and ET, the drier subsets can feature decreases. For reference, CESM2 climatological precipitation and ET are XX and YYmm. Refigured with non-overlapping composites tk.}
-\end{figure}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  CONCLUSION
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusions}
+%Text here ===>>>
+
 
 %%
 
@@ -307,21 +331,19 @@ This section MUST contain a statement that describes where the data supporting t
 https://www.agu.org/Publish with AGU/Publish/Author Resources/Data for Authors
 
 
+
+
 \acknowledgments
 Enter acknowledgments here. This section is to acknowledge funding, thank colleagues, enter any secondary affiliations, and so on.
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 % REFERENCES and BIBLIOGRAPHY
 %
-% \bibliography{<name of your .bib file>} don't specify the file extension
-% don't specify bibliographystyle
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibliography{refs.bib}
+\bibliography{ refs.bib }
 
 
 

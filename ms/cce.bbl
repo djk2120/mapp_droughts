@@ -1,39 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Seager%
-\ \protect \BOthers {.}}{%
-Seager%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2022}}%
-}]{%
-seager2022}
-\APACinsertmetastar {%
-seager2022}%
-\begin{APACrefauthors}%
-Seager, R.%
-, Ting, M.%
-, Alexander, P.%
-, Nakamura, J.%
-, Liu, H.%
-, Li, C.%
-\BCBL {}\ \BBA {} Simpson, I\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2022}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Mechanisms of a Meteorological Drought Onset: Summer
-  2020 to Spring 2021 in Southwestern North America} {Mechanisms of a
-  meteorological drought onset: Summer 2020 to spring 2021 in southwestern
-  north america}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Climate}{35}{22}{7367 - 7385}.
-\newblock
-\begin{APACrefDOI} \doi{10.1175/JCLI-D-22-0314.1} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Simpson%
 \ \protect \BOthers {.}}{%
 Simpson%
