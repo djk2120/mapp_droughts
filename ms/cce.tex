@@ -109,13 +109,7 @@ Here are instructions on writing a Plain Language Summary:
 https://www.agu.org/Share-and-Advocate/Share/Community/Plain-language-summary
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  OUTLINE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Outline and in flux}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,7 +119,7 @@ https://www.agu.org/Share-and-Advocate/Share/Community/Plain-language-summary
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-%Text here ===>>>
+The summer of 2020 was the driest of the meteorological record within the Southwest United States \cite{mankin2021,hoell2022}, capping off an extended twenty year megadrought \cite{williams2022}.
 Models incorrectly predict positive vapor pressure trends in semi-arid regions \cite{simpson2024}.
 
 
@@ -136,10 +130,75 @@ Models incorrectly predict positive vapor pressure trends in semi-arid regions \
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Methods}
-%Text here ===>>>
+
+Our study focused on the `four corners' regions of the western United States, which is defined as the region encompassing four adjoining states: Colorado, Utah, New Mexico, and Arizona.
+This region was chosen due to the spatial footprint of the 2020 drought (Supp Figure 1), as well as its significance for water management \cite{mankin2021} 
+Our goal was to create a large sample of simulations exhibiting extreme drought conditions, while still allowing for local land-atmosphere coupling, in order to investigate the influences of antecedent conditions and climate change.
+
+We ran multiple ensembles of simulations using CESM2, each consisting of 30 members, with varied initial conditions. For each simulation, winds were nudged to the ERA5 reanalysis for the year 2020. 
+Nudging occurred four times per day in each grid cell outside the box bounded by 28$^{\circ}$N, 47$^{\circ}$N, 130$^{\circ}$W, 96$^{\circ}$W. This serves to constrain the large-scale circulation, imposing meteorological drought conditions for every ensemble member. Inside the bounding box, the atmosphere evolves freely, allowing for full land-atmosphere coupling, which is necessary for studying the effects of initial conditions.  
+Sea surface temperatures (SSTs) were imposed from an ERA5 reanalysis product, and all other forcing (e.g. CO$_2$, aerosols) followed the standard conventions for transient simulations as in the CESM2-LE. 
+The simulations were initialized in April, using random initial conditions from the CESM2-LE for all the requisite land and atmosphere states (e.g. temperature, soil moisture, humidity). 
+
+Our primary ensemble was based in 2020, mirroring the extreme 2020 Southwest U.S. drought. We also simulated this drought during pre-industrial and future conditions to investigate the influence of climate change. All of the ensembles were nudged to the 2020 winds, but initial conditions and other climate forcings were drawn from the appropriate time period mirroring the CESM2-LE, effectively porting the 2020 circulation to these two alternative climates. SSTs were anomaly-based, computing anomalies from the CESM2-LE and applying them to the ERA5 reanalysis SSTs used in the 2020 ensemble. Initial conditions were drawn at random from the CESM2-LE from either April 1850 or April 2090, and all other forcing (e.g. CO$_2$, aerosols) followed the standard conventions for transient simulations as in the CESM2-LE, which follows the SSP3-7.0 emissions scenario.
+
+We have compared our ensembles to the existing CESM2-LE \cite{rodgers2021}, which consists of 100 transient simulations (1850-2100) of the fully coupled configuration of CESM2.
+This ensemble is useful, because it provides a large number of model realizations, sampling across a range of internal climate variability.
+For the sake of comparison, we have utilized the same model source code and utilized the same forcing where applicable.
+The two key differences between our ensembles and the CESM2-LE are that 1) we impose the 2020 drought circulation via nudging and 2) we forced the simulations with observed SSTs (in lieu of dynamically coupled SSTs). 
+
+ \begin{table}[h]
+ \caption{Ensemble descriptions}
+ \centering
+ \begin{tabular}{l c c c c}
+ \hline
+  Name  & Winds & Climate forcing & SSTs & Initial Conditions \\
+ \hline
+   Control  & ERA5-2020& 2020 (SSP3-7.0) & ERA5-2020 & CESM2-LE (2020)\\
+   Pre-industrial  & ERA5-2020 & 1850 & ERA5-2020 + CESM2-LE anomalies (1850) & CESM2-LE (1850) \\
+   Future        & ERA5-2020 & 2090 (SSP3-7.0) & ERA5-2020 + CESM2-LE anomalies (2020) & CESM2-LE (2090) \\
+ \hline
+ \end{tabular}
+ \label{tab:exps}
+ \end{table}
 
 
 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  OUTLINE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Outline and in flux}
+
+\subsection{Key points}
+\begin{itemize}
+	\item CCE can reproduce the 2020 drought
+	\item Soil water initialization influences drought severity via variables (soil moisture, runoff, temperature extremes), but does not exacerbate the meteorological drought, itself 
+	\item Warming affects this drought
+	\begin{itemize}
+		\item ET reduced in both free-running and constrained droughts
+		\item P reduced in CCE, but mixed signal in free-running CESM2-LE
+	\end{itemize}
+	\item 2090 CCE is much drier than the CESM2-LE
+\end{itemize}
+
+
+\subsection{Some numbers I'd like}
+\begin{itemize}
+\item 2020 JAS Precip (obs or CCE?) sits at the XXth percentile of the CESM2 large ensemble. 
+\end{itemize}
+
+\subsection{Supp figures I'll need}
+\begin{itemize}
+\item CESM2-LE JAS Precip historgram with obs and/or CCE
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -149,7 +208,39 @@ Models incorrectly predict positive vapor pressure trends in semi-arid regions \
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Results and Discussion}
-%Text here ===>>>
+
+\begin{figure}
+\includegraphics[width=32pc]{../figs/main/domain.pdf}
+\caption{Map of the study domain and nudging boundary. All analyses were based in the `four corners' region of the western United States, yellow area. Model simulations were nudged to reanalysis winds outside of the red box, in order to induce the observed large-scale circulation, while allowing for local land-atmosphere coupling.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=28pc]{../figs/main/precip.pdf}
+\caption{Precipitation climatologies for the four corners region from reanalysis (GPCP, 1981-2020) and a model large ensemble (CESM2-LE, 1981-2020) alongside our constrained circulation ensemble (CCE-2020). For each of the datasets, shading spans the 5th to 95th percentiles (across years and/or ensemble members), and the solid line tracks the mean. The dotted black line shows the reanalysis precipitation for 2020. The CESM2-LE shows a small high bias in mean and variance relative to reanalysis precipitation, but does not effectively capture the timing or magnitude of the summer monsoon. When nudged to 2020 winds, CESM2 can reproduce the 2020 drought, even though it falls outside the large ensemble envelope.
+N.b. will combine this with Figure 1.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=35pc]{../figs/main/inits.pdf}
+\caption{The influence of soil water initialization on various summer (JAS) drought indicators in the CCE, shown in the context of the variance across the CESM2-LE. In each case, the 10cm soil water content at initialization is plotted (red dots) against the summer drought indicator, with linear regression where appropriate (red lines). The colored stripes span the CESM2-LE deciles for the given drought indicator, truncated at the 1st and 99th percentiles. Dots in the white background area, exist below the 1st percentile of the CESM2-LE. Initial soil water content influences many drought indicators, but not the severity of the meteorological drought itself, i.e. summer precipitation.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=35pc]{../figs/main/scatter_ET_P.png}
+\caption{Summer evapotranspiration vs. precipitation in the CCE (a) and a dry subset of the CESM2-LE (d), alongside histograms of ET (b,e) and precipitation (c,f) across three time periods. The CESM2-LE is subset to the 30 driest ensemble-years for each period from 1000 total ensemble-years (100 members, 10 years around the given year) based on JAS 10cm soil water content. Stars indicate significant differences in the mean relative to the two other time periods, via t-test at the p$<$0.05 level. Forced responses tend to reduce ET and precipitation in both the CCE and the dry subset of the CESM2-LE. }
+\end{figure}
+
+
+\begin{figure}
+\includegraphics[width=35pc]{../figs/main/contours_ET_SW.pdf}
+\caption{Summer evapotranspiration vs. 10cm soil water content from the CCE (dots) and the CESM2-LE (scatter density contours) across the three time periods. The relationship in the CCE closely follows the CESM2-LE pattern. The CCE exists at the dry extreme of the CESM2-LE, or even beyond, in the 2090 ensemble. }
+\end{figure}
+
+
+\begin{figure}
+\includegraphics[width=35pc]{../figs/main/contours_PREC_ET.pdf}
+\caption{Summer precipitation vs. evapotranspiration from the CCE (dots) and the CESM2-LE (scatter density contours) across the three time periods. The location of the CCE data comports with the CESM2-LE pattern, but the slopes do not appear to match. N.b. will combine this with Figure 5.}
+\end{figure}
 
 
 
@@ -162,160 +253,6 @@ Models incorrectly predict positive vapor pressure trends in semi-arid regions \
 \section{Conclusions}
 %Text here ===>>>
 
-
-%%
-
-%  Numbered lines in equations:
-%  To add line numbers to lines in equations,
-%  \begin{linenomath*}
-%  \begin{equation}
-%  \end{equation}
-%  \end{linenomath*}
-
-
-
-%% Enter Figures and Tables near as possible to where they are first mentioned:
-%
-% DO NOT USE \psfrag or \subfigure commands.
-%
-% Figure captions go below the figure.
-% Acronyms used in figure captions will be spelled out in the final, published version.
-
-% Table titles go above tables;  other caption information
-%  should be placed in last line of the table, using
-% \multicolumn2l{$^a$ This is a table note.}
-% NOTE that there is no difference between table caption and table heading in the final, published version
-%
-%----------------
-% EXAMPLE FIGURES
-%
-% \begin{figure}
-% \includegraphics{example.png}
-% \caption{caption}
-% \end{figure}
-%
-% Giving latex a width will help it to scale the figure properly. A simple trick is to use \textwidth. Try this if large figures run off the side of the page.
-% \begin{figure}
-% \noindent\includegraphics[width=\textwidth]{anothersample.png}
-%\caption{caption}
-%\label{pngfiguresample}
-%\end{figure}
-%
-%
-% If you get an error about an unknown bounding box, try specifying the width and height of the figure with the natwidth and natheight options. This is common when trying to add a PDF figure without pdflatex.
-% \begin{figure}
-% \noindent\includegraphics[natwidth=800px,natheight=600px]{samplefigure.pdf}
-%\caption{caption}
-%\label{pdffiguresample}
-%\end{figure}
-%
-%
-% PDFLatex does not seem to be able to process EPS figures. You may want to try the epstopdf package.
-%
-
-%
-% ---------------
-% EXAMPLE TABLE
-%
-% \begin{table}
-% \caption{Time of the Transition Between Phase 1 and Phase 2$^{a}$}
-% \centering
-% \begin{tabular}{l c}
-% \hline
-%  Run  & Time (min)  \\
-% \hline
-%   $l1$  & 260   \\
-%   $l2$  & 300   \\
-%   $l3$  & 340   \\
-%   $h1$  & 270   \\
-%   $h2$  & 250   \\
-%   $h3$  & 380   \\
-%   $r1$  & 370   \\
-%   $r2$  & 390   \\
-% \hline
-% \multicolumn{2}{l}{$^{a}$Footnote text here.}
-% \end{tabular}
-% \end{table}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SIDEWAYS FIGURES and TABLES
-% AGU prefers the use of {sidewaystable} over {landscapetable} as it causes fewer problems.
-%
-% \begin{sidewaysfigure}
-% \includegraphics[width=20pc]{figsamp}
-% \caption{caption here}
-% \label{newfig}
-% \end{sidewaysfigure}
-%
-%  \begin{sidewaystable}
-%  \caption{Caption here}
-% \label{tab:signif_gap_clos}
-%  \begin{tabular}{ccc}
-% one&two&three\\
-% four&five&six
-%  \end{tabular}
-%  \end{sidewaystable}
-
-%% If using numbered lines, please surround equations with \begin{linenomath*}...\end{linenomath*}
-%\begin{linenomath*}
-%\begin{equation}
-%y|{f} \sim g(m, \sigma),
-%\end{equation}
-%\end{linenomath*}
-
-%%% End of body of article
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional Appendices go here
-%
-% The \appendix command resets counters and redefines section heads
-%
-% After typing \appendix
-%
-%\section{Here Is Appendix Title}
-% will show
-% A: Here Is Appendix Title
-%
-%\appendix
-%\section{Here is a sample appendix}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Optional Glossary, Notation or Acronym section goes here:
-%
-% Glossary is only allowed in Reviews of Geophysics
-%  \begin{glossary}
-%  \term{Term}
-%   Term Definition here
-%  \term{Term}
-%   Term Definition here
-%  \term{Term}
-%   Term Definition here
-%  \end{glossary}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Acronyms
-%% NOTE that acronyms in the final published version will be spelled out when used in figure captions.
-%   \begin{acronyms}
-%   \acro{Acronym}
-%   Definition here
-%   \acro{EMOS}
-%   Ensemble model output statistics
-%   \acro{ECMWF}
-%   Centre for Medium-Range Weather Forecasts
-%   \end{acronyms}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Notation
-%   \begin{notation}
-%   \notation{$a+b$} Notation Definition here
-%   \notation{$e=mc^2$}
-%   Equation in German-born physicist Albert Einstein's theory of special
-%  relativity that showed that the increased relativistic mass ($m$) of a
-%  body comes from the energy of motion of the body—that is, its kinetic
-%  energy ($E$)—divided by the speed of light squared ($c^2$).
-%   \end{notation}
 
 
 
@@ -347,171 +284,10 @@ Enter acknowledgments here. This section is to acknowledge funding, thank collea
 
 
 
-%Reference citation instructions and examples:
-%
-% Please use ONLY \cite and \citeA for reference citations.
-% \cite for parenthetical references
-% ...as shown in recent studies (Simpson et al., 2019)
-% \citeA for in-text citations
-% ...Simpson et al. (2019) have shown...
-%
-%
-%...as shown by \citeA{jskilby}.
-%...as shown by \citeA{lewin76}, \citeA{carson86}, \citeA{bartoldy02}, and \citeA{rinaldi03}.
-%...has been shown \cite{jskilbye}.
-%...has been shown \cite{lewin76,carson86,bartoldy02,rinaldi03}.
-%... \cite <i.e.>[]{lewin76,carson86,bartoldy02,rinaldi03}.
-%...has been shown by \cite <e.g.,>[and others]{lewin76}.
-%
-% apacite uses < > for prenotes and [ ] for postnotes
-% DO NOT use other cite commands (e.g., \citet, \citep, \citeyear, \nocite, \citealp, etc.).
-%
-
-
 
 \end{document}
 
 
-
-More Information and Advice:
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  SECTION HEADS
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Capitalize the first letter of each word (except for
-% prepositions, conjunctions, and articles that are
-% three or fewer letters).
-
-% AGU follows standard outline style; therefore, there cannot be a section 1 without
-% a section 2, or a section 2.3.1 without a section 2.3.2.
-% Please make sure your section numbers are balanced.
-% ---------------
-% Level 1 head
-%
-% Use the \section{} command to identify level 1 heads;
-% type the appropriate head wording between the curly
-% brackets, as shown below.
-%
-%An example:
-%\section{Level 1 Head: Introduction}
-%
-% ---------------
-% Level 2 head
-%
-% Use the \subsection{} command to identify level 2 heads.
-%An example:
-%\subsection{Level 2 Head}
-%
-% ---------------
-% Level 3 head
-%
-% Use the \subsubsection{} command to identify level 3 heads
-%An example:
-%\subsubsection{Level 3 Head}
-%
-%---------------
-% Level 4 head
-%
-% Use the \subsubsubsection{} command to identify level 3 heads
-% An example:
-%\subsubsubsection{Level 4 Head} An example.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  IN-TEXT LISTS
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Do not use bulleted lists; enumerated lists are okay.
-% \begin{enumerate}
-% \item
-% \item
-% \item
-% \end{enumerate}
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  EQUATIONS
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Single-line equations are centered.
-% Equation arrays will appear left-aligned.
-
-Math coded inside display math mode \[ ...\]
- will not be numbered, e.g.,:
- \[ x^2=y^2 + z^2\]
-
- Math coded inside \begin{equation} and \end{equation} will
- be automatically numbered, e.g.,:
- \begin{equation}
- x^2=y^2 + z^2
- \end{equation}
-
-
-% To create multiline equations, use the
-% \begin{eqnarray} and \end{eqnarray} environment
-% as demonstrated below.
-\begin{eqnarray}
-  x_{1} & = & (x - x_{0}) \cos \Theta \nonumber \\
-        && + (y - y_{0}) \sin \Theta  \nonumber \\
-  y_{1} & = & -(x - x_{0}) \sin \Theta \nonumber \\
-        && + (y - y_{0}) \cos \Theta.
-\end{eqnarray}
-
-%If you don't want an equation number, use the star form:
-%\begin{eqnarray*}...\end{eqnarray*}
-
-% Break each line at a sign of operation
-% (+, -, etc.) if possible, with the sign of operation
-% on the new line.
-
-% Indent second and subsequent lines to align with
-% the first character following the equal sign on the
-% first line.
-
-% Use an \hspace{} command to insert horizontal space
-% into your equation if necessary. Place an appropriate
-% unit of measure between the curly braces, e.g.
-% \hspace{1in}; you may have to experiment to achieve
-% the correct amount of space.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  EQUATION NUMBERING: COUNTER
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% You may change equation numbering by resetting
-% the equation counter or by explicitly numbering
-% an equation.
-
-% To explicitly number an equation, type \eqnum{}
-% (with the desired number between the brackets)
-% after the \begin{equation} or \begin{eqnarray}
-% command.  The \eqnum{} command will affect only
-% the equation it appears with; LaTeX will number
-% any equations appearing later in the manuscript
-% according to the equation counter.
-%
-
-% If you have a multiline equation that needs only
-% one equation number, use a \nonumber command in
-% front of the double backslashes (\\) as shown in
-% the multiline equation above.
-
-% If you are using line numbers, remember to surround
-% equations with \begin{linenomath*}...\end{linenomath*}
-
-%  To add line numbers to lines in equations:
-%  \begin{linenomath*}
-%  \begin{equation}
-%  \end{equation}
-%  \end{linenomath*}
 
 
 
