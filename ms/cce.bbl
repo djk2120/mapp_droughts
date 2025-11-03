@@ -1,0 +1,178 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Hoell%
+\ \protect \BOthers {.}}{%
+Hoell%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+hoell2022}
+\APACinsertmetastar {%
+hoell2022}%
+\begin{APACrefauthors}%
+Hoell, A.%
+, Quan, X\BHBI W.%
+, Hoerling, M.%
+, Fu, R.%
+, Mankin, J.%
+, Simpson, I.%
+\BDBL {}Sheffield, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Record Low North American Monsoon Rainfall in 2020
+  Reignites Drought over the American Southwest} {Record low north american
+  monsoon rainfall in 2020 reignites drought over the american
+  southwest}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bulletin of the American Meteorological
+  Society}{103}{3}{S26 - S32}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/bams/103/3/BAMS-D-21-0129.1.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1175/BAMS-D-21-0129.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mankin%
+\ \protect \BOthers {.}}{%
+Mankin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+mankin2021}
+\APACinsertmetastar {%
+mankin2021}%
+\begin{APACrefauthors}%
+Mankin, J\BPBI S.%
+, Simpson, I\BPBI R.%
+, Hoell, A.%
+, Fu, R.%
+, Lisonbee, J.%
+, Sheffield, A.%
+\BCBL {}\ \BBA {} Barrie, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+\APACrefbtitle {{NOAA} Drought Task Force Report on the 2020–2021
+  {S}outhwestern {U.S.} Drought} {{NOAA} drought task force report on the
+  2020–2021 {S}outhwestern {U.S.} drought}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{NOAA Drought Task Force IV.;National Integrated
+  Drought Information System (U.S.);Modeling, Analysis, Predictions, and
+  Projections Program (U.S.)}.
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.25923/j0rj-an85} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rodgers%
+\ \protect \BOthers {.}}{%
+Rodgers%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+rodgers2021}
+\APACinsertmetastar {%
+rodgers2021}%
+\begin{APACrefauthors}%
+Rodgers, K\BPBI B.%
+, Lee, S\BHBI S.%
+, Rosenbloom, N.%
+, Timmermann, A.%
+, Danabasoglu, G.%
+, Deser, C.%
+\BDBL {}Yeager, S\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ubiquity of human-induced changes in climate
+  variability} {Ubiquity of human-induced changes in climate
+  variability}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth System Dynamics}{12}{4}{1393--1411}.
+\newblock
+\begin{APACrefURL} \url{https://esd.copernicus.org/articles/12/1393/2021/}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5194/esd-12-1393-2021} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Simpson%
+\ \protect \BOthers {.}}{%
+Simpson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+simpson2024}
+\APACinsertmetastar {%
+simpson2024}%
+\begin{APACrefauthors}%
+Simpson, I\BPBI R.%
+, McKinnon, K\BPBI A.%
+, Kennedy, D.%
+, Lawrence, D\BPBI M.%
+, Lehner, F.%
+\BCBL {}\ \BBA {} Seager, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Observed humidity trends in dry regions contradict
+  climate models} {Observed humidity trends in dry regions contradict climate
+  models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the National Academy of
+  Sciences}{121}{1}{e2302480120}.
+\newblock
+\begin{APACrefURL} \url{https://www.pnas.org/doi/abs/10.1073/pnas.2302480120}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1073/pnas.2302480120} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Williams%
+, Cook%
+\BCBL {}\ \BBA {} Smerdon%
+}{%
+Williams%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+williams2022}
+\APACinsertmetastar {%
+williams2022}%
+\begin{APACrefauthors}%
+Williams, A\BPBI P.%
+, Cook, B\BPBI I.%
+\BCBL {}\ \BBA {} Smerdon, J\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rapid intensification of the emerging southwestern North
+  American megadrought in 2020--2021} {Rapid intensification of the emerging
+  southwestern north american megadrought in 2020--2021}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Climate Change}{12}{3}{232--234}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41558-022-01290-z}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41558-022-01290-z} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

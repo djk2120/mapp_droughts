@@ -1,4 +1,4 @@
-grep citation cce.aux | sed 's/citation//g' | tr -d '\\{}' | sort | uniq > cites.txt
+grep citation ms.aux | sed 's/citation//g' | tr -d '\\{}' | sort | uniq > cites.txt
 
 d='/Users/djk2120/projects/references/refs/'
 :> refs.bib
