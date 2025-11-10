@@ -60,7 +60,7 @@
 	\item Our CCE can reproduce the 2020 SWUS drought
 	\item Soil water initialization influences drought severity (soil moisture, runoff, temperature extremes), but does not exacerbate the meteorological drought, itself 
 	\item Warming from climate change may have exacerbated this drought, but to a small extent
-	\item 2090 CCE is much drier than 2090 CESM2-LE
+	\item 2090 CCE is much drier than 2090 CESM2-LE, indicating potential drought mitigation from coupled circulation change
 \end{keypoints}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,7 +104,7 @@ Water in the Southwest United States (SWUS) is scarce, but also has myriad produ
 Likewise the abundance of water is strongly related to fire risk and temperature extremes. 
 Climate change has added strain to the water supply, with drier air and reduced snowpack due to warming, as well as increased precipitation variability.
 The summer of 2020 was the driest of the meteorological record within the SWUS \cite{mankin2021,hoell2022} and arrived in the midst of a 22-year megadrought (2000-2021), which was drier than any other extended drought in a soil moisture reconstruction dating back to 800 C.E. \cite{williams2022}.
-One more sentence about the effects of the 2020 drought tk, e.g. water shortage and temperature extremes.
+One more sentence about the effects of the 2020 drought TKTK, e.g. water shortage and temperature extremes.
 
 Drought in the SWUS and its intersection with climate change, is challenging to understand from observations alone, and has been frequently investigated with the aid of global or regional climate models.
 While models tend to agree on trends in temperature, soil moisture, and runoff, precipitation is more difficult to predict across this domain, due to the complex orography and the dynamic nature of the North American Monsoon \cite{cook2020,pascale2017}.
@@ -124,23 +124,19 @@ One such technique is to run land-atmosphere coupled simulations forced with the
 It is typical to generate ensembles with various land/atmosphere initial conditions to quantify the range of outcomes expected from that specific SST evolution. 
 These simulations are cheaper and faster than fully coupled simulations, and can be very helpful for understanding the association of SST patterns with hazard risk \cite{hoell2022,seager2022}.
 However, if the SSTs are not directly implicated in drought risk, such ensembles will not meaningfully upsample drought events, as seems to be the case with the 2020 summer drought in the SWUS \cite{jiang2025}.
-Another technique, reinitialized ensemble boosting, involves branching a fully coupled simulation ahead of a key event, and introducing roundoff level atmospheric perturbations to generate an ensemble of simulations. 
+Another technique, reinitialized ensemble boosting, involves branching a fully coupled simulation ahead of a key event, and introducing roundoff level atmospheric perturbations to generate an ensemble of short-duration, fully-coupled simulations. 
 This has been used to better understand the proximate drivers of heat extremes, and to demonstrate the existence of even more extreme heatwaves \cite{gessner2021, fischer2023}. 
-This technique is very effective at up-sampling the extreme event, but generally can only sample a small range of initial conditions. 
+This technique is very effective at up-sampling the extreme event, but will generally span only a small range of initial conditions. 
 
-\vspace{80px}
-
-\noindent \P4: ensemble boosting techniques
-	\begin{itemize}
-	\item AMIP simulations
-	\begin{itemize}
-		\item even with observed SSTs it can be difficult to reproduce droughts, due to the influence of atmospheric internal variability
-	\end{itemize}
-	\item branched fully coupled simulations
-	\item nudging
-	\end{itemize}
-
-\noindent \P5: our experiment and research questions
+In this study we impose a constrained circulation ensemble approach, where we not only force with reanalysis SSTs, but also nudge winds to reanalysis from the 2020 SWUS drought. 
+This allows us to generate an ensemble with drought in every simulation, but that also spans a wide range of land initialization possibilities. 
+This approach was recently used to investigate the influence of soil moisture preconditioning on the 2021 Pacific Northwest heatwave \cite{duan2025}.
+Using this framework, along with an existing fully coupled large ensemble, we are able to ask:
+\begin{enumerate}
+\item Can a climate model reproduce the 2020 SWUS drought, forced with the large-scale circulation?
+\item How do antecedent conditions, specifically soil moisture, influence drought severity?
+\item To what extent is the 2020 SWUS drought attributable to unforced climate variability, and should we expect future climate change to exacerbate monsoon failure?
+\end{enumerate}
 
 
 
