@@ -108,16 +108,25 @@ One more sentence about the effects of the 2020 drought tk, e.g. water shortage 
 
 Drought in the SWUS and its intersection with climate change, is challenging to understand from observations alone, and has been frequently investigated with the aid of global or regional climate models.
 While models tend to agree on trends in temperature, soil moisture, and runoff, precipitation is more difficult to predict across this domain, due to the complex orography and the dynamic nature of the North American Monsoon \cite{cook2020,pascale2017}.
-There is also evidence that models may underestimate the drying effects of climate change on near-surface atmospheric vapor pressure in semi-arid regions \cite{simpson2024}.
-The general consensus seems to be that climate change has indeed exacerbated the consequences of meteorological drought, but that the recent precipitation shortfalls themselves are primarily attributable to natural climate variability, including a phase change of the Pacific Decadal Oscillation. 
+There is also evidence that models may systematically underestimate the drying effects of climate change on near-surface atmospheric vapor pressure in semi-arid regions \cite{simpson2024}.
+As such, it can be difficult to make strong inference regarding precipitation variations in the region, using large-scale coupled climate models.
+The general consensus seems to be that climate change has indeed exacerbated drought in the SWUS in a general sense, but that the recent precipitation shortfalls themselves are primarily attributable to random (natural) atmospheric variations, with potential contributions from a shift towards a sustained negative phase of the Pacific Decadal Oscillation \cite{mankin2021,seager2022, jiang2025}.
 
-Climate model large ensembles are often used for discerning forced responses from natural climate variability. 
-The CESM2 large ensemble \cite{rodgers2021} provides 100 ensemble members with varied initial conditions, yielding 100 distinct realizations of the historical record, and a large sample size for investigating drought dynamics in the SWUS.
-Instead of one instance of the year 2020, there are 100, and when we expand to look at neighboring years, we can create large samples of SWUS summers, numbering in the thousands.
-However, the statistical basis can still become small when focusing explicitly on extreme quantiles, or when controlling for very specific conditions. 
-Attribution of the 2020 SWUS drought is challenging, partly because of our imperfect models, but also because we are trying to diagnose changes not in the mean behavior, but in the extreme quantiles.
-Climate hazards are generally sporadic, and the accompanying risks are often concentrated in the extreme quantiles of the associated probability distributions, e.g. ``the hundred-year flood".
-As such, to effectively characterize risk using climate models, especially given finite computing resources, it can be helpful to design experiments that can up-sample these hazard occurrences.
+Climate model large ensembles are often used for discerning forced responses from natural climate variability \cite{deser2020}. 
+The CESM2 large ensemble \cite{rodgers2021} provides 100 ensemble members with varied initial conditions, yielding 100 distinct realizations of the historical period, and a large sample size for investigating drought dynamics in the SWUS.
+Instead of one instance of the year 2020, there are 100, such that we can create large samples of SWUS summers, in order to better analyze drought dynamics.
+However, the statistical basis can still become small when focusing explicitly on extreme quantiles, or when controlling for very specific circulation criteria. 
+Attribution of the 2020 SWUS drought is challenging, partly because of our imperfect models, but also because we are trying to diagnose changes not in the mean behavior, but in the severity of rare events.
+Climate hazards are often sporadic, and the accompanying risks are typically concentrated in the extreme quantiles of the probability distributions, e.g. ``the hundred-year flood".
+As such, to effectively characterize risk using climate models, especially given finite computing resources, it can be helpful to design experiments that up-sample these hazard occurrences.
+
+One such technique is to run land-atmosphere coupled simulations forced with the SSTs associated with an extreme event. 
+It is typical to generate ensembles with various land/atmosphere initial conditions to quantify the range of outcomes expected from that specific SST evolution. 
+These simulations are cheaper and faster than fully coupled simulations, and can be very helpful for understanding the association of SST patterns with hazard risk \cite{hoell2022,seager2022}.
+However, if the SSTs are not directly implicated in drought risk, such ensembles will not meaningfully upsample drought events, as seems to be the case with the 2020 summer drought in the SWUS \cite{jiang2025}.
+Another technique, reinitialized ensemble boosting, involves branching a fully coupled simulation ahead of a key event, and introducing roundoff level atmospheric perturbations to generate an ensemble of simulations. 
+This has been used to better understand the proximate drivers of heat extremes, and to demonstrate the existence of even more extreme heatwaves \cite{gessner2021, fischer2023}. 
+This technique is very effective at up-sampling the extreme event, but generally can only sample a small range of initial conditions. 
 
 \vspace{80px}
 
