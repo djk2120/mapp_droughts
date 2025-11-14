@@ -57,10 +57,10 @@
 
 
 \begin{keypoints}
-	\item Our CCE can reproduce the 2020 SWUS drought
-	\item Soil water initialization influences drought severity (soil moisture, runoff, temperature extremes), but does not exacerbate the meteorological drought, itself 
-	\item Warming from climate change may have exacerbated this drought, but to a small extent
-	\item 2090 CCE is much drier than 2090 CESM2-LE, indicating potential drought mitigation from coupled circulation change
+	\item Our constrained circulation ensemble can reproduce the 2020 SWUS drought.
+	\item Soil water initialization influences drought severity (soil moisture, runoff, temperature extremes), but does not exacerbate the meteorological drought, itself.
+	\item Warming from climate change may have exacerbated the monsoon failure, but to a small extent.
+	\item Our 2020 constrained ensemble is comparable to droughts seen in a fully coupled large ensemble, and likewise for an 1850 analogue, but is drier than the fully coupled model in 2090.
 \end{keypoints}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -176,7 +176,7 @@ This region was chosen based on the spatial footprint of the 2020 drought (Supp 
 Our goal was to create a set of simulations with extreme drought conditions, while still allowing for local land-atmosphere coupling, in order to investigate the influences of antecedent conditions and climate change.
 
 We ran multiple ensembles of simulations using CESM2, each consisting of 30 members, with varied initial conditions. For each simulation, winds were nudged to the ERA5 reanalysis for the year 2020. 
-Nudging occurred four times per day in each grid cell outside the box bounded by 28$^{\circ}$N, 47$^{\circ}$N, 130$^{\circ}$W, 96$^{\circ}$W (Figure \ref{fig:domain}). This serves to constrain the large-scale circulation, imposing meteorological drought conditions for every ensemble member. Inside the bounding box, the atmosphere evolves freely, allowing for local land-atmosphere coupling, which is necessary for studying the effects of initial conditions.  
+Nudging occurred four times per day in each grid cell outside the box bounded by 28$^{\circ}$N, 47$^{\circ}$N, 130$^{\circ}$W, 96$^{\circ}$W (Figure \ref{fig:fig1}a). This serves to constrain the large-scale circulation, imposing meteorological drought conditions for every ensemble member. Inside the bounding box, the atmosphere evolves freely, allowing for local land-atmosphere coupling, which is necessary for studying the effects of initial conditions.  
 Sea surface temperatures (SSTs) were imposed from an ERA5 reanalysis product, and all other forcing (e.g. CO$_2$, aerosols) followed the standard conventions for transient simulations as in the CESM2-LE. 
 The simulations were initialized in April, using random initial conditions from the CESM2-LE for all the requisite land and atmosphere states (e.g. temperature, soil moisture, humidity).
 Each simulation ran for nine months. 
@@ -279,14 +279,6 @@ Whereas the consequences of the 2020 drought circulation are within the envelope
 This would seem to indicate that coupled circulation feedbacks may partially mitigate extreme divergence events in CESM2, under late-century SSP3-7.0 conditions.
 
 
-
-\noindent Things to potentially think about:
-\begin{itemize}
-\item Why is CCE-2090 so dry? (tk plot AMJ convergence histograms for supp, P-E for now, can complicate later)
-\end{itemize}
-
-
-
 \begin{figure}
 \includegraphics[width=35pc]{../figs/main/contours_ET_SW.pdf}
 \caption{Summer evapotranspiration vs. 10cm soil water content from the CCE (dots) and the CESM2-LE (scatter density contours) across the three time periods. The relationship in the CCE closely follows the CESM2-LE pattern. The CCE exists at the dry extreme of the CESM2-LE, or even beyond, as in the 2090 scenario. }
@@ -328,10 +320,13 @@ We have higher confidence in our inference with regard to investigating precondi
 Drier initializations were associated with lower ET, lower runoff, higher temperatures, and a weaker carbon sink, serving to significantly exacerbate the drought.
 However, initialization did not have a strong influence on precipitation, itself. 
 Precipitation in our analyses was generally controlled by the circulation pattern, more than by local water availability.
-The CCE approach is particularly useful for investigating the influence of antecedent conditions, because we are able to force drought in all simulations, but also sample a wide range of initial conditions
+The CCE approach is particularly useful for investigating the influence of antecedent conditions, because we are able to force the meteorological drought in all simulations, but also sample a wide range of initial conditions.
 
-Ensemble boosting is useful and probably quite prudent
-
+Because climate risk tends to be concentrated in extreme events, it is prudent to design experiments to study such events beyond their natural occurrence rate in free-running simulations.
+Likewise forced changes to the mean in any given variable may not transpose directly to the extreme quantiles. 
+For example, we found that for CESM2, climate change tends to increase ET in our study domain on average, but actually results in a decrease in ET during drought years. 
+Frameworks to better resolve extreme events include initial condition large ensembles, AMIP ensembles, branched reinitialization ensemble boosting, and the constrained circulation ensemble.
+We find the CCE framework to be a useful tool for investigating extreme events, particularly when the simulations can be analyzed relative to an unconstrained initial condition large ensemble.
 
 \clearpage
 
