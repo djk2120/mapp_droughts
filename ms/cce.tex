@@ -126,11 +126,11 @@ One such technique is to run land-atmosphere coupled simulations forced with obs
 However, if the SSTs are not directly implicated in drought risk, such ensembles will not meaningfully upsample drought events, as seems to be the case with the 2020 summer drought in the SWUS \cite{jiang2025}.
 Another technique, reinitialized ensemble boosting, involves branching a fully coupled simulation ahead of a key model-based event, and introducing roundoff level atmospheric perturbations to generate an ensemble of short-duration, fully-coupled simulations. 
 This has been used to better understand the proximate drivers of heat extremes, and to demonstrate the existence of even more extreme heatwaves than can be produced with a limited sample size \cite{gessner2021, fischer2023}. 
-This technique is very effective at up-sampling the extreme event, but will generally span only a small range of initial conditions. 
+This technique is very effective at simulating extreme conditions, but will generally span only a small range of initial conditions, due to the shared initialization among ensemble members.
 
 In this study we impose a constrained circulation ensemble approach, where we not only force with observation-based SSTs, but also nudge winds to reanalysis to capture the specific circulation patterns of the 2020 SWUS drought. 
 This allows us to generate an ensemble with drought in every simulation, but that also spans a wide range of land initialization possibilities. 
-This approach was recently effectively used to investigate the influence of soil moisture preconditioning on the 2021 Pacific Northwest heatwave \cite{duan2025}.
+This approach was effectively used to investigate the influence of soil moisture preconditioning on the 2021 Pacific Northwest heatwave \cite{duan2025}.
 Using this framework, along with an existing fully coupled large ensemble, we are able to ask:
 \begin{enumerate}
 \item Can a climate model reproduce the 2020 SWUS drought when forced with the observed large-scale circulation?
@@ -164,7 +164,7 @@ For the sake of comparison, we utilized the CESM2-LE codebase for our simulation
 
 We opted to force our simulations with NOAA Extended Reconstructed Sea Surface Temperature V5 \cite{huang2017}. These are available at 2$^{\circ}$ resolution, which we regridded to the CESM2 nominal 1$^{\circ}$ resolution.
 We utilized the wind fields from ERA5, the fifth generation European Center for Medium Range Weather Forecasts atmospheric reanalysis product \cite{hersbach2020}, in order to nudge our simulations to the 2020 circulation (described further in Section \ref{sect:exp}).
-All other forcings (e.g. aerosols, CO$_2$, land use) follow the protocol of the CESM2-LE \cite{rodgers2021}.
+All other forcings (e.g. aerosols, CO$_2$, land use) follow the protocol of the CESM2-LE \cite{rodgers2021}, including emissions from CMIP6, that follow the historical and then the SSP3-7.0 emissions pathway.
 We compared our simulations to the Global Precipitation Climatology Project (GPCP) Monthly Analysis Product \cite{adler2003}.
 These data are available at 2.5$^{\circ}$ resolution, which we likewise regridded to the CESM2 nominal 1$^{\circ}$ resolution.
 
@@ -225,7 +225,7 @@ Despite the extreme nature of the 2020 monsoon failure, the CCE is able to repro
 
 
 \begin{figure}[t]
-\includegraphics[width=35pc]{../figs/main/inits.pdf}
+\includegraphics[width=35pc]{../figs/main/inits.png}
 \caption{The influence of soil water initialization on various summer (JAS) drought indicators in the 2020 CCE, shown in the context of the variance across the CESM2-LE. In each case, the 10cm soil water content at initialization is plotted (red dots) against the summer drought indicator, with linear regression where appropriate (red lines). The colored stripes span the CESM2-LE deciles for the given drought indicator, truncated at the 1st and 99th percentiles. Dots in the white background area, exist below the 1st percentile of the CESM2-LE. Initial soil water content influences many drought indicators, but not the severity of the meteorological drought itself, i.e. summer precipitation.}
 \label{fig:inits}
 \end{figure}
@@ -244,9 +244,9 @@ One more tk sentence about how CCE is pretty nice for testing initial conditions
 
 We ran CCEs across three climate scenarios: pre-industrial, present-day, and late century in an SSP3-7.0 warming scenario.
 The CCEs show a climate change influence on the regional water cycle, where both ET and precipitation are reduced moving from the pre-industrial period to present-day, and again moving from present-day to the end of this century (Figure \ref{fig:scatter}a-c).
-CCE monsoon precipitation was reduced by 4mm (tk, precise this) on average between the pre-industrial and present-day simulations, with another 9mm reduction simulated with SSP3-7.0 by the end of the century.
-Given that the 2020 monsoon failure represented a 64mm shortfall relative to climatological precipitation (Supp Figure 3), the CCE historical climate change  effect of -4mm is small relative to the overall drought signal. We infer, therefore, that the meteorological drought is primarily attributable to unforced climate variability, which is consistent with prior assessments \cite{seager2022}.
-As such, climate change may have exacerbated the monsoon failure, but only slightly, and could potentially increase the severity of future precipitation shortfalls by another 9mm or roughly 12\%. 
+CCE monsoon precipitation was reduced by 4.2mm on average between the pre-industrial and present-day simulations, with another 9.0mm reduction simulated with SSP3-7.0 by the end of the century.
+Given that the 2020 monsoon failure represented a 64mm shortfall relative to climatological precipitation (Supp Figure 3), the CCE historical climate change  effect of -4.2mm is small relative to the overall drought signal. We infer, therefore, that the meteorological drought is primarily attributable to unforced climate variability, which is consistent with prior assessments \cite{seager2022}.
+As such, climate change may have exacerbated the monsoon failure, but only slightly, and could potentially increase the severity of future precipitation shortfalls by another 9mm or roughly 10 to 15\%. 
 However, we note that the CCE experiment cannot capture any coupled circulation feedbacks that could exacerbate or mitigate the radiative response. 
 A tk sentence here providing a literature reference to forced circulation changes.
 
