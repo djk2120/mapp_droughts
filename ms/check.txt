@@ -1,0 +1,2 @@
+are the SSTs ERA5 or ERSST?
+add hashes to Fig 4?

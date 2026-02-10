@@ -38,7 +38,7 @@
 %  TITLE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Constrained Circulation Ensemble}
+\title{Drought severity in a constrained circulation ensemble of the 2020 Southwest United States drought}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  AUTHORS AND AFFILIATIONS
@@ -57,10 +57,10 @@
 
 
 \begin{keypoints}
-	\item A constrained circulation ensemble can reproduce the 2020 SWUS drought.
-	\item Soil water initialization influences drought severity (soil moisture, runoff, temperature extremes), but does not exacerbate the meteorological drought, itself.
+	\item A constrained circulation ensemble can reproduce the 2020 Southwest United States drought.
+	\item Soil water initialization influences drought severity (soil moisture, runoff, temperature extremes), but does not influence the precipitation.
 	\item Warming from climate change may have exacerbated the monsoon failure, but to a small extent.
-	\item The constrained 2020 drought and 1850 analog align with the distribution from the free running model, but the 2090 analog is drier.
+	\item The constrained 2020 drought and an 1850 analog are comparable to extreme droughts in the free running model, but a 2090 analog would be exceptionally dry.
 \end{keypoints}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,36 +100,37 @@ TKTK
 
 \section{Introduction}
 
-Water in the Southwest United States (SWUS) is scarce, but also has myriad important uses including agriculture, public water supply, recreation, and supporting the local ecology.
-The abundance of water is also strongly related to fire risk and temperature extremes. 
-Climate change has added strain to the water supply, with drier air and reduced snowpack due to warming, as well as increased precipitation variability.
+Water in the Southwest United States (SWUS) is scarce, with myriad competing uses including agriculture, public water supply, recreation, and supporting the local ecology \cite{dettinger2015}.
+The abundance of water is also related to fire risk and temperature extremes \cite{holden2025,hirschi2011}. 
+Climate change has added strain to the water supply via reduced snowpack, increased atmospheric demand, and increased precipitation variability \cite{wieder2022,albano2022,pendergrass2017}.
 The summer of 2020 was the driest of the meteorological record within the SWUS \cite{mankin2021,hoell2022} and arrived in the midst of a 22-year megadrought (2000-2021), which was drier than any other extended drought in a soil moisture reconstruction dating back to 800 C.E. \cite{williams2022}.
-One more sentence about the effects of the 2020 drought TKTK, e.g. water shortage and temperature extremes.
+Consequences of this drought (and its continuation into 2021) included severe water restrictions, billions in economic damages, and a staggering fire season \cite{higuera2021,jiang2025}
 
-Drought in the SWUS and its intersection with climate change, is challenging to understand from observations alone, and has been frequently investigated with the aid of global or regional climate models.
-Models tend to agree on trends in temperature, with associated reductions in soil moisture.
-The forced responses of precipitation and runoff are more uncertain.
-Precipitation is difficult to predict across this domain, due to complex orography and the dynamic nature of the North American Monsoon \cite{cook2020,pascale2017}.
+Drought in the SWUS, and its intersection with climate change, is challenging to understand from observations alone, and has been frequently investigated with the aid of global or regional climate models \cite{cook2018}.
+Models tend to agree on trends in temperature \cite{kumar2013, papalexiou2020}, with an associated increase in vapor pressure deficit and reduction in surface soil moisture \cite{fang2022,berg2017}.
+The forced responses of precipitation and runoff are more heterogeneous and more uncertain \cite{kumar2013, shepherd2014, wu2024}.
+Precipitation is difficult to predict across the SWUS, due to complex orography and the dynamic nature of the North American Monsoon \cite{cook2020,pascale2017}.
 There is also evidence that models may systematically underestimate the drying effects of climate change on near-surface atmospheric vapor pressure in semi-arid regions \cite{simpson2024}.
-As such, it can be difficult to make strong inference regarding precipitation variations or trends in the region, using large-scale coupled climate models.
-The general consensus seems to be that climate change has indeed exacerbated SWUS drought in a general sense, but that the precipitation shortfalls of the extreme 2020 drought themselves are primarily attributable to random (natural) atmospheric variations, with potential contributions from a shift towards a sustained negative phase of the Pacific Decadal Oscillation \cite{mankin2021,seager2022, jiang2025}.
+As such, it can be difficult to make strong inference regarding precipitation variations or trends in the region using large-scale coupled climate models.
+Despite the recent megadrought, the only forced precipitation trend identified for the SWUS at this point is a small decrease during the spring season \cite{seager2022}.
+The general consensus seems to be that climate change has indeed exacerbated SWUS drought in a general sense, but that the precipitation shortfalls of the extreme 2020 drought themselves are primarily attributable to random (natural) atmospheric variations, with potential contributions from a shift in the Pacific Decadal Oscillation from the positive phase (most of the 1980s and 1990s) to its negative phase (most of the 2000s and 2010s) \cite{mankin2021,seager2022, jiang2025}.
 
 Climate model large ensembles are often used to discern forced responses from natural climate variability \cite{deser2020}. 
 The CESM2 large ensemble \cite{rodgers2021} provides 100 ensemble members with varied initial conditions, yielding 100 distinct realizations of the historical period, and a large sample size for investigating drought dynamics in the SWUS.
 Instead of one instance of the year 2020, there are 100, such that we can generate large samples of SWUS summers, in order to better analyze drought dynamics in the context of natural variability.
-However, the statistical basis can still become small when focusing explicitly on extreme quantiles, or when filtering for very specific circulation criteria. 
-Attribution of the 2020 SWUS drought is challenging, partly because of our imperfect models, but also because we are trying to diagnose changes not in the mean behavior, but in the severity of rare events.
-Climate hazards are often sporadic, and the accompanying risks are typically concentrated in the extreme quantiles of the probability distributions, e.g. ``the hundred-year flood".
+However, the statistical basis can still become small when focusing explicitly on extreme quantiles, or when filtering for specific circulation criteria. 
+Attribution of the 2020 SWUS drought is challenging, partly because of our imperfect models, but also because we are trying to diagnose changes not in the mean behavior, but in the severity of a rare event.
+Climate hazards are often sporadic, with risks that are disproportionately concentrated in the extreme quantiles of the probability distributions, e.g. ``the hundred-year flood" \cite{newman2023}.
 As such, to effectively characterize risk using climate models, especially given finite computing resources, it can be helpful to design experiments that up-sample these hazard occurrences.
 
 One such technique is to run land-atmosphere coupled simulations forced with observation-based SSTs from an extreme event to understand the association of SST patterns and antecedent conditions with hazard risk \cite{hoell2022,seager2022}.
 However, if the SSTs are not directly implicated in drought risk, such ensembles will not meaningfully upsample drought events, as seems to be the case with the 2020 summer drought in the SWUS \cite{jiang2025}.
 Another technique, reinitialized ensemble boosting, involves branching a fully coupled simulation ahead of a key model-based event, and introducing roundoff level atmospheric perturbations to generate an ensemble of short-duration, fully-coupled simulations. 
-This has been used to better understand the proximate drivers of heat extremes, and to demonstrate the existence of even more extreme heatwaves than can be produced with a limited sample size \cite{gessner2021, fischer2023}. 
+This has been used to better understand the proximate drivers of heat extremes, and to demonstrate the potential of even more extreme heatwaves than seen in the observational record \cite{gessner2021, fischer2023}. 
 This technique is very effective at simulating extreme conditions, but will generally span only a small range of initial conditions, due to the shared initialization among ensemble members.
 
 In this study we impose a constrained circulation ensemble approach, where we not only force with observation-based SSTs, but also nudge winds to reanalysis to capture the specific circulation patterns of the 2020 SWUS drought. 
-This allows us to generate an ensemble with drought in every simulation, but that also spans a wide range of land initialization possibilities. 
+This allows us to generate an ensemble with drought in every simulation, but that also spans a wide range of land initializations. 
 This approach was effectively used to investigate the influence of soil moisture preconditioning on the 2021 Pacific Northwest heatwave \cite{duan2025}.
 Using this framework, along with an existing fully coupled large ensemble, we are able to ask:
 \begin{enumerate}
@@ -157,14 +158,14 @@ For this study we utilized the Community Earth System Model, version 2 (CESM2) \
 We ran a suite of simulations in land-atmosphere coupled mode (namely the FHIST\_BGC component set) using a data ocean (simulations described in Section \ref{sect:exp}).
 We compared our simulations to the CESM2 Large Ensemble (CESM2-LE) \cite{rodgers2021}, which consists of 100 transient simulations (1850-2100) of the fully coupled configuration of CESM2.
 The simulations follow historical forcing through 2014 and then switch to the SSP3-7.0 emissions scenario.
-This ensemble is useful, because it provides a large number of model realizations, sampling across a range of internal climate variability states.
+The large ensemble is useful, because it provides a large number of model realizations, sampling across a range of internal climate variability states.
 For the sake of comparison, we utilized the CESM2-LE codebase for our simulations and the same forcing where applicable.
 
 \subsection{Data}
 
-We opted to force our simulations with NOAA Extended Reconstructed Sea Surface Temperature V5 \cite{huang2017}. These are available at 2$^{\circ}$ resolution, which we regridded to the CESM2 nominal 1$^{\circ}$ resolution.
+We opted to force our simulations with the NOAA Extended Reconstructed Sea Surface Temperature V5 (ERSSTv5) dataset \cite{huang2017}. These are available at 2$^{\circ}$ resolution, which we regridded to the CESM2 nominal 1$^{\circ}$ resolution.
 We utilized the wind fields from ERA5, the fifth generation European Center for Medium Range Weather Forecasts atmospheric reanalysis product \cite{hersbach2020}, in order to nudge our simulations to the 2020 circulation (described further in Section \ref{sect:exp}).
-All other forcings (e.g. aerosols, CO$_2$, land use) follow the protocol of the CESM2-LE \cite{rodgers2021}, including emissions from CMIP6, that follow the historical and then the SSP3-7.0 emissions pathway.
+All other forcings (e.g. aerosols, CO$_2$, land use) follow the protocol of the CESM2-LE \cite{rodgers2021}, including emissions from CMIP6, that follow the historical and then the SSP3-7.0 emissions pathway \cite{eyring2016}.
 We compared our simulations to the Global Precipitation Climatology Project (GPCP) Monthly Analysis Product \cite{adler2003}.
 These data are available at 2.5$^{\circ}$ resolution, which we likewise regridded to the CESM2 nominal 1$^{\circ}$ resolution.
 
@@ -176,19 +177,19 @@ This region was chosen based on the spatial footprint of the 2020 drought (Supp 
 Our goal was to create a set of simulations with extreme drought conditions, while still allowing for local land-atmosphere coupling, in order to investigate the influences of antecedent conditions and climate change.
 
 We ran multiple ensembles of simulations using CESM2, each consisting of 30 members, with varied initial conditions. For each simulation, winds were nudged to the ERA5 reanalysis for the year 2020. 
-Nudging occurred four times per day in each grid cell outside the box bounded by 28$^{\circ}$N, 47$^{\circ}$N, 130$^{\circ}$W, 96$^{\circ}$W (red in Figure \ref{fig:fig1}a). This serves to constrain the large-scale circulation, imposing meteorological drought conditions for every ensemble member. Inside the bounding box, the atmosphere evolves freely aside from the constraints imposed by nudging the large scale circulation outside of the box, allowing for local land-atmosphere coupling, which is necessary to study the effects of initial conditions.  
-Sea surface temperatures (SSTs) were imposed from ERA5, and all other forcing (e.g. CO$_2$, aerosols) followed the standard conventions for transient simulations as in the CESM2-LE. 
-The simulations were initialized in April, using random initial conditions from the CESM2-LE for all the requisite land and atmosphere states (e.g. temperature, soil moisture, humidity).
+Nudging occurred four times per day in each grid cell outside the box bounded by 28$^{\circ}$N, 47$^{\circ}$N, 130$^{\circ}$W, 96$^{\circ}$W (red in Figure \ref{fig:fig1}a). This serves to impose the large-scale circulation associated with the 2020 SWUS drought for every ensemble member. Inside the bounding box, the atmosphere evolves freely (aside from the constraints at the box edges), allowing for local land-atmosphere coupling, which is necessary to study the effects of initial conditions.  
+Sea surface temperatures (SSTs) were imposed from ERSSTv5, and all other forcing (e.g. CO$_2$, aerosols) followed the standard conventions for transient simulations as in the CESM2-LE. 
+The simulations were initialized in April, using initial conditions from the CESM2-LE for all the requisite land and atmosphere states (e.g. temperature, soil moisture, humidity).
 Each simulation ran for nine months. 
 
 \begin{figure}
 \includegraphics[width=32pc]{../figs/main/fig1.png}
 \caption{Map of the study domain and nudging boundary (a). All analyses were based in the `four corners' region of the western United States, yellow area. Model simulations were nudged to reanalysis winds outside of the red box, in order to induce the observed large-scale circulation, while allowing for local land-atmosphere coupling.
-Precipitation climatologies (b) for the four corners region from reanalysis (GPCP, 1981-2020) and a model large ensemble (CESM2-LE, 1981-2020), alongside our constrained circulation ensemble (CCE-2020). For each of the datasets, shading spans the 5th to 95th percentiles (across years and/or ensemble members), and the solid line tracks the mean. The dotted black line shows the reanalysis precipitation for 2020. The CESM2-LE shows a small high bias in mean and variance relative to reanalysis precipitation, and it does not accurately capture the timing or magnitude of the summer monsoon. When nudged to 2020 winds (i.e. CCE-2020), CESM2 can reproduce the 2020 drought, even though it falls outside the large ensemble envelope.}
+Precipitation climatologies (b) for the four corners region from an observations-based product (GPCP, 1981-2020) and a model large ensemble (CESM2-LE, 1981-2020), alongside our constrained circulation ensemble (CCE-2020). For each of the datasets, shading spans the 5th to 95th percentiles (across years and/or ensemble members), and the solid line tracks the mean. The dotted black line shows the reanalysis precipitation for 2020. The CESM2-LE shows a small high bias in mean and variance relative to reanalysis precipitation, and it does not accurately capture the timing or magnitude of the summer monsoon. When nudged to 2020 winds (i.e. CCE-2020), CESM2 can reproduce the 2020 drought, even though it falls outside the large ensemble envelope.}
 \label{fig:fig1}
 \end{figure}
 
-Our primary ensemble was based in 2020, mirroring the extreme 2020 Southwest U.S. drought. We also simulated this drought during pre-industrial and future conditions to investigate the influence of climate change. All of the ensembles were nudged to the 2020 winds, but initial conditions and other climate forcings were drawn from the appropriate time period of the CESM2-LE, which is tantamount to porting the 2020 circulation to these two alternative climates. SST forcing for the two alternate periods was anomaly-based, wherein we computed anomalies from the CESM2-LE ensemble mean and applied them to the ERA5 reanalysis SSTs used in the 2020 ensemble. Initial conditions were drawn at random from the CESM2-LE from either April 1850 or April 2090, and all other forcing (e.g. CO$_2$, aerosols) followed the standard conventions for transient simulations as in the CESM2-LE, which follows the SSP3-7.0 emissions scenario. The two key differences between our ensembles and the CESM2-LE are that 1) we impose the 2020 drought circulation via nudging and 2) we forced the simulations with SSTs (in lieu of dynamically coupled SSTs). 
+Our primary ensemble was based in 2020, mirroring the extreme 2020 Southwest U.S. drought. We also simulated this drought during pre-industrial and future conditions to investigate the influence of climate change. All of the ensembles were nudged to the 2020 winds, but initial conditions and other climate forcings were drawn from the appropriate time period of the CESM2-LE, which is designed to port the 2020 circulation to these two alternative climates. Initial conditions were drawn at random from the CESM2-LE from the ten year period centered on the given ensemble year (i.e. 1851-1860, 2015-2024, or 2090-2099 TK check years). SST forcing for the pre-industrial and future ensembles was anomaly-based, wherein we computed average SST anomalies for the reference period relative to 2015-2024 in the CESM2-LE and applied them to the ERSSTv5 data used in the 2020 ensemble. All other forcing (e.g. CO$_2$, aerosols) followed the standard conventions for transient simulations as in the CESM2-LE, which follows the SSP3-7.0 emissions scenario. The two key differences between our ensembles and the CESM2-LE are that 1) we imposed the large-scale circulation associated with the 2020 via nudging and 2) we forced the simulations with SSTs (in lieu of dynamically coupled SSTs). 
 
  \begin{table}[h]
  \caption{Ensemble descriptions}
@@ -213,15 +214,14 @@ Our primary ensemble was based in 2020, mirroring the extreme 2020 Southwest U.S
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{Results and Discussion}
-
-
-One or two tk intro sentence to say, hello and welcome to the results section.
-The CESM2-LE slightly over-predicts precipitation mean and variance in the SWUS, compared to the GPCP reanalysis product across 1981-2020 (Figure \ref{fig:fig1}b).
+\subsection{2020 SWUS Drought}
+Our experiment demonstrates that CESM2 can reproduce the 2020 SWUS drought if the large-scale circulation is nudged to the observed winds (Figure \ref{fig:fig1}b), as the constrained circulation ensemble (CCE) mean closely matches observed precipitation in the four corners region during 2020.
+This is despite an imperfect precipitation climatology in the CESM2-LE as compared to the GPCP observations across 1980-2020.
+The CESM2-LE slightly over-predicts precipitation mean and variance (TK, precise this) in the SWUS, compared to the GPCP reanalysis product across 1981-2020 (Figure \ref{fig:fig1}b).
 Furthermore, CESM2 underestimates the relative contribution of summer rain to annual precipitation and does not accurately match the observed monsoon timing.
-Despite this, the regional monsoon period (JAS) precipitation statistics match very closely between the CESM2-LE and the GPCP reanalysis product (Supp Figure 3).
-The 2020 SWUS drought was very dry (JAS precip = 71mm, GPCP), which sits at the the 1.8th percentile of the CESM2 large ensemble, primarily driven by extremely dry August and September months.
+When constrained to the monsoon period (JAS), precipitation statistics match more closely between the CESM2-LE and the GPCP reanalysis product (Supp Figure 3).
+The 2020 SWUS drought was very dry (JAS precip = 71mm, GPCP), which sits at the 1.8th percentile of the CESM2 large ensemble, primarily driven by extremely dry August and September months.
 Despite the extreme nature of the 2020 monsoon failure, the CCE is able to reproduce the observed meteorological drought, demonstrating an important role for the circulation pattern that occurred in producing it.
-
 
 
 \begin{figure}[t]
@@ -232,9 +232,11 @@ Despite the extreme nature of the 2020 monsoon failure, the CCE is able to repro
 
 The CCE provides 30 replicates of the drought-inducing circulation, initialized across a range of soil water conditions (see Section \ref{sect:exp} for details).
 Dry initialization exacerbates drought severity, with significant reductions in summer soil moisture, evapotranspiration (ET), runoff as well as increased temperature (Figure \ref{fig:inits}).
-Of the various drought indicators, ET was most closely correlated with soil water initialization (Figure \ref{fig:inits}c), but net biome production experienced the largest initialization effect (based on the number of contours crossed by the regression line, Figure \ref{fig:inits}e), where drier initial soils significantly degraded the carbon sink.
+Of the various drought indicators, ET was most closely correlated with soil water initialization (Figure \ref{fig:inits}c), but net biome production experienced the largest initialization effect (based on the number of contours crossed by the regression line, Figure \ref{fig:inits}e).
+Drier initial soils strongly degraded the carbon sink.
 Monsoon period precipitation itself was not correlated with soil water initialization, indicating that the meteorological drought severity is not sensitive to initial conditions in CESM, consistent with previous findings \cite{jiang2025}.
-One more tk sentence about how CCE is pretty nice for testing initial conditions.
+In line with a previous heatwave study \cite{duan2025}, we found the CCE approach to be useful for investigating the influence of antecedent conditions on drought severity.
+This improves over alternative approaches that either fail to consistently impose drought \cite{jiang2025} or sample a smaller range of initial conditions \cite{gessner2021, fischer2023}.
 
 \begin{figure}
 \includegraphics[width=35pc]{../figs/main/scatter_ET_P.png}
@@ -242,41 +244,42 @@ One more tk sentence about how CCE is pretty nice for testing initial conditions
 \label{fig:scatter}
 \end{figure}
 
+\subsection{Imposing the 2020 Circulation in alternative climates}
+
 We ran CCEs across three climate scenarios: pre-industrial, present-day, and late century in an SSP3-7.0 warming scenario.
 The CCEs show a climate change influence on the regional water cycle, where both ET and precipitation are reduced moving from the pre-industrial period to present-day, and again moving from present-day to the end of this century (Figure \ref{fig:scatter}a-c).
 CCE monsoon precipitation was reduced by 4.2mm on average between the pre-industrial and present-day simulations, with another 9.0mm reduction simulated with SSP3-7.0 by the end of the century.
 Given that the 2020 monsoon failure represented a 64mm shortfall relative to climatological precipitation (Supp Figure 3), the CCE historical climate change  effect of -4.2mm is small relative to the overall drought signal. We infer, therefore, that the meteorological drought is primarily attributable to unforced climate variability, which is consistent with prior assessments \cite{seager2022}.
 As such, climate change may have exacerbated the monsoon failure, but only slightly, and could potentially increase the severity of future precipitation shortfalls by another 9mm or roughly 10 to 15\%. 
 However, we note that the CCE experiment cannot capture any coupled circulation feedbacks that could exacerbate or mitigate the radiative response. 
-A tk sentence here providing a literature reference to forced circulation changes.
+Significant circulation changes in response to climate change forcing have been documented, but are generally less robust than processes that are primarily under thermodynamic control, such as surface temperature \cite{shepherd2014}.
 
-
+The reduction in monsoon precipitation observed in the CCE has not been previously observed within CESM2 \cite{seager2022}.
+As such, we analyzed the CESM2-LE to see if this effect is present within the dynamically coupled version of the model.
+Specifically we analyzed extreme drought years; the thirty driest monsoons across 1000 simulation years, sorting by 10cm soil moisture among the 100 CESM2-LE members across the 10 years nearest our CCE.
 The CESM2-LE, which does include circulation feedbacks, likewise shows a drying response across the driest years, but with significantly more noise (Figure \ref{fig:scatter}d-f).
-Because the CCE constrains the large-scale circulation, there is much less variance within each ensemble than in CESM2-LE. 
-In the CESM2-LE, the large-scale circulation evolves freely, yielding a unique circulation pattern for every ensemble member.
-The response of ET to forcing in the CESM2-LE is consistent between PI to present and present to future, both showing a downward trend. 
-Precipitation declines slightly from pre-industrial to present-day, but minimal decline occurs between present-day and the future. 
-These results correspond to a subset of dry years in the CESM2-LE, where we are analyzing the 30 driest monsoons in each time period (based on 10cm soil water), because our interest is specifically in forced changes to extreme droughts.
+Because the CCE constrains the large-scale circulation, there is much less variance within the CCE than in CESM2-LE. 
+
+The response of ET to forcing in the CESM2-LE is consistent between PI to present and present to future, both showing significant reductions (Figure \ref{fig:scatter}e). 
+Precipitation declines from pre-industrial to present-day, but minimal decline occurs between present-day and the future (Figure \ref{fig:scatter}f). 
 Importantly, the forced responses at the extreme quantiles are distinct from those at moderate or wet quantiles (Supp Figure 4), highlighting the importance of investigating extremes separately from mean changes.
-For example, the overall CESM2-LE response to climate change in the SWUS is higher evapotranspiration, but it occurs with a prominent dipole of dry years trending towards even less ET, and moderate and wet years trending towards more ET.
-(This dipole seems to be unique with CESM2, but I don't really want to introduce the other datasets at this point, unless we think it's especially important)
+For example, the overall CESM2-LE response to climate change in the SWUS is higher ET, but it occurs with a prominent dipole of dry years trending towards less ET, and moderate and wet years trending towards more ET.
 
 
-
-
-There is a strong relationship between summer soil water and ET in both the CCE and the CESM2-LE (Figure \ref{fig:swcontours}).
-The CCE simulations vary only by the initial conditions, whereas the CESM2-LE data are sampled across various initial conditions and circulation patterns (with strong covariance). 
+ET behaves similarly in the CCE and the CESM2-LE, with a strong relationship between summer soil water and ET in both the CCE and the CESM2-LE (Figure \ref{fig:contours}a-c).
+The CCE simulations vary only by the initial conditions and are not associated with the large-scale circulation, because they were selected at random.
+The CESM2-LE data samples initial conditions and circulation patterns coherently, with expected covariance. 
 Despite this, the two ensembles show comparable ET$\sim$SW relationships, indicating that the ET flux is largely determined by the soil moisture state, and is relatively agnostic to the specific circulation pattern.
-This is in contrast to the relationship between precipitation and ET, where the slopes of the two relationships look quite different (Figure \ref{fig:pcontours}).
+This is in contrast to the relationship between precipitation and ET, where the slopes of the two relationships are different (Figure \ref{fig:contours}).
 The CCE shows a much weaker relationship between P and ET than seen in the CESM2-LE, indicating that, constrained to the 2020 circulation pattern, adding more ET does not have a large effect on P in the model.
 In the CESM2-LE shifting from left to right in these plots is not only changing the soil water (as in the CCE), but is likewise traversing a range of circulation patterns from diverging to converging, with associated effects on both ET and P. 
 The large discrepancy in the P$\sim$ET relationship between the CCE and the CESM2-LE seems to indicate that the circulation pattern has a stronger influence on precipitation than does the local water availability.
-As such, the CCE framework allows us to explore how the model responds to climate change absent circulation feedbacks, and in turn, diagnose potential circulation feedback impacts when comparing the CCE to a free-running large ensemble.
 
-In this case, we ported the 2020 drought circulation to PI and future climates, which imposes the climate change radiative forcings, without any coupled changes to the circulation pattern.
-In many ways the CCE behaves akin to the CESM2-LE, however the CCE is much drier relative to the CESM2-LE in 2090 than it is in 1850 or 2020 (e.g., the CCE centroid is well outside the CESM2-LE contours in Figure \ref{fig:swcontours}). 
-Whereas the consequences of the 2020 drought circulation are within the envelope of the CESM2-LE in the PI and 2020 experiments, porting the circulation to 2090 results in very high values of moisture flux divergence and extremely low surface humidity, humidity levels that are significantly lower than that occur during the most extreme droughts of the CESM2-LE (Supp Figure 5).
-This result suggests that either the probability of having a circulation pattern that induces a drought as severe as 2020 is reduced or that, when such circulation patterns occur, coupled circulation feedbacks may partially mitigate extreme divergence events in CESM2, under late-century SSP3-7.0 conditions.
+In our experiment, we ported the 2020 drought circulation to PI and future climates, which imposes the climate change radiative forcings, without any coupled changes to the circulation pattern.
+In many ways the CCE behaves akin to the CESM2-LE, however the CCE is much drier relative to the CESM2-LE in 2090 than it is in 1850 or 2020 (e.g., the CCE centroid is well outside the CESM2-LE contours in Figure \ref{fig:contours}). 
+The consequences of the 2020 drought circulation are within the envelope of the CESM2-LE in the PI and 2020 experiments.
+However when we port this circulation to 2090, the results indicate very high values of moisture flux divergence and extremely low surface humidity, humidity levels that are significantly lower than that occur during the most extreme droughts of the CESM2-LE (Supp Figure 5).
+This result suggests that under late-century SSP3-7.0 conditions either the probability of this extreme circulation pattern is reduced or that coupled circulation feedbacks may partially mitigate extreme divergence events in CESM2.
 
 
 \begin{figure}

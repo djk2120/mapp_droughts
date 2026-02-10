@@ -1,6 +1,575 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Adler%
+\ \protect \BOthers {.}}{%
+Adler%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+adler2003}
+\APACinsertmetastar {%
+adler2003}%
+\begin{APACrefauthors}%
+Adler, R\BPBI F.%
+, Huffman, G\BPBI J.%
+, Chang, A.%
+, Ferraro, R.%
+, Xie, P\BHBI P.%
+, Janowiak, J.%
+\BDBL {}Nelkin, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The {Version-2 Global Precipitation Climatology Project
+  (GPCP)} Monthly Precipitation Analysis (1979–Present)} {The {Version-2
+  Global Precipitation Climatology Project (GPCP)} monthly precipitation
+  analysis (1979–present)}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Hydrometeorology}{4}{6}{1147 - 1167}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/hydr/4/6/1525-7541_2003_004_1147_tvgpcp_2_0_co_2.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1175/1525-7541(2003)004<1147:TVGPCP>2.0.CO;2}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Albano%
+\ \protect \BOthers {.}}{%
+Albano%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+albano2022}
+\APACinsertmetastar {%
+albano2022}%
+\begin{APACrefauthors}%
+Albano, C\BPBI M.%
+, Abatzoglou, J\BPBI T.%
+, McEvoy, D\BPBI J.%
+, Huntington, J\BPBI L.%
+, Morton, C\BPBI G.%
+, Dettinger, M\BPBI D.%
+\BCBL {}\ \BBA {} Ott, T\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Multidataset Assessment of Climatic Drivers and
+  Uncertainties of Recent Trends in Evaporative Demand across the Continental
+  United States} {A multidataset assessment of climatic drivers and
+  uncertainties of recent trends in evaporative demand across the continental
+  united states}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Hydrometeorology}{23}{4}{505 - 519}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/hydr/23/4/JHM-D-21-0163.1.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1175/JHM-D-21-0163.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Berg%
+, Sheffield%
+\BCBL {}\ \BBA {} Milly%
+}{%
+Berg%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+berg2017}
+\APACinsertmetastar {%
+berg2017}%
+\begin{APACrefauthors}%
+Berg, A.%
+, Sheffield, J.%
+\BCBL {}\ \BBA {} Milly, P\BPBI C\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Divergent surface and total soil moisture projections
+  under global warming} {Divergent surface and total soil moisture projections
+  under global warming}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{44}{1}{236-244}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/2016GL071921} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cook%
+, Mankin%
+\BCBL {}\ \BBA {} Anchukaitis%
+}{%
+Cook%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+cook2018}
+\APACinsertmetastar {%
+cook2018}%
+\begin{APACrefauthors}%
+Cook, B\BPBI I.%
+, Mankin, J\BPBI S.%
+\BCBL {}\ \BBA {} Anchukaitis, K\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Climate Change and Drought: From Past to Future}
+  {Climate change and drought: From past to future}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Current Climate Change Reports}{4}{2}{164--179}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/s40641-018-0093-2}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s40641-018-0093-2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cook%
+\ \protect \BOthers {.}}{%
+Cook%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+cook2020}
+\APACinsertmetastar {%
+cook2020}%
+\begin{APACrefauthors}%
+Cook, B\BPBI I.%
+, Mankin, J\BPBI S.%
+, Marvel, K.%
+, Williams, A\BPBI P.%
+, Smerdon, J\BPBI E.%
+\BCBL {}\ \BBA {} Anchukaitis, K\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Twenty-First Century Drought Projections in the {CMIP6}
+  Forcing Scenarios} {Twenty-first century drought projections in the {CMIP6}
+  forcing scenarios}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth's Future}{8}{6}{e2019EF001461}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019EF001461}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2019EF001461 10.1029/2019EF001461}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2019EF001461} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Danabasoglu%
+\ \protect \BOthers {.}}{%
+Danabasoglu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+danabasoglu2020}
+\APACinsertmetastar {%
+danabasoglu2020}%
+\begin{APACrefauthors}%
+Danabasoglu, G.%
+, Lamarque, J\BHBI F.%
+, Bacmeister, J.%
+, Bailey, D\BPBI A.%
+, DuVivier, A\BPBI K.%
+, Edwards, J.%
+\BDBL {}Strand, W\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Community Earth System Model Version 2 (CESM2)}}
+  {{The Community Earth System Model Version 2 (CESM2)}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Advances in Modeling Earth
+  Systems}{12}{2}{e2019MS001916}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019MS001916}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2019MS001916 2019MS001916}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2019MS001916} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Deser%
+\ \protect \BOthers {.}}{%
+Deser%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+deser2020}
+\APACinsertmetastar {%
+deser2020}%
+\begin{APACrefauthors}%
+Deser, C.%
+, Lehner, F.%
+, Rodgers, K\BPBI B.%
+, Ault, T.%
+, Delworth, T\BPBI L.%
+, DiNezio, P\BPBI N.%
+\BDBL {}Ting, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Insights from Earth system model initial-condition large
+  ensembles and future prospects} {Insights from earth system model
+  initial-condition large ensembles and future prospects}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Climate Change}{10}{4}{277--286}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41558-020-0731-2}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41558-020-0731-2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dettinger%
+, Udall%
+\BCBL {}\ \BBA {} Georgakakos%
+}{%
+Dettinger%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+dettinger2015}
+\APACinsertmetastar {%
+dettinger2015}%
+\begin{APACrefauthors}%
+Dettinger, M.%
+, Udall, B.%
+\BCBL {}\ \BBA {} Georgakakos, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Western water and climate change} {Western water and
+  climate change}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Ecological Applications}{25}{8}{2069-2093}.
+\newblock
+\begin{APACrefURL}
+  \url{https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/15-0938.1}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1890/15-0938.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Duan%
+, McKinnon%
+\BCBL {}\ \BBA {} Simpson%
+}{%
+Duan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+duan2025}
+\APACinsertmetastar {%
+duan2025}%
+\begin{APACrefauthors}%
+Duan, S\BPBI Q.%
+, McKinnon, K\BPBI A.%
+\BCBL {}\ \BBA {} Simpson, I\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Impact of Soil Preconditioning on the Evolution of
+  Heatwaves Under Constrained Circulation: A Case Study of the 2021 Pacific
+  Northwest Heatwave} {The impact of soil preconditioning on the evolution of
+  heatwaves under constrained circulation: A case study of the 2021 pacific
+  northwest heatwave}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth's Future}{13}{9}{e2025EF006216}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2025EF006216}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2025EF006216 2025EF006216}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2025EF006216} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Eyring%
+\ \protect \BOthers {.}}{%
+Eyring%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+eyring2016}
+\APACinsertmetastar {%
+eyring2016}%
+\begin{APACrefauthors}%
+Eyring, V.%
+, Bony, S.%
+, Meehl, G\BPBI A.%
+, Senior, C\BPBI A.%
+, Stevens, B.%
+, Stouffer, R\BPBI J.%
+\BCBL {}\ \BBA {} Taylor, K\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Overview of the Coupled Model Intercomparison Project
+  Phase 6 (CMIP6) experimental design and organization} {Overview of the
+  coupled model intercomparison project phase 6 (cmip6) experimental design and
+  organization}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geoscientific Model Development}{9}{5}{1937--1958}.
+\newblock
+\begin{APACrefURL} \url{https://gmd.copernicus.org/articles/9/1937/2016/}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.5194/gmd-9-1937-2016} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fang%
+, Zhang%
+, Brandt%
+, Abdi%
+\BCBL {}\ \BBA {} Fensholt%
+}{%
+Fang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+fang2022}
+\APACinsertmetastar {%
+fang2022}%
+\begin{APACrefauthors}%
+Fang, Z.%
+, Zhang, W.%
+, Brandt, M.%
+, Abdi, A\BPBI M.%
+\BCBL {}\ \BBA {} Fensholt, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Globally Increasing Atmospheric Aridity Over the 21st
+  Century} {Globally increasing atmospheric aridity over the 21st
+  century}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth's Future}{10}{10}{e2022EF003019}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2022EF003019}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2022EF003019 2022EF003019}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2022EF003019} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fischer%
+\ \protect \BOthers {.}}{%
+Fischer%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+fischer2023}
+\APACinsertmetastar {%
+fischer2023}%
+\begin{APACrefauthors}%
+Fischer, E\BPBI M.%
+, Beyerle, U.%
+, Bloin-Wibe, L.%
+, Gessner, C.%
+, Humphrey, V.%
+, Lehner, F.%
+\BDBL {}Knutti, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Storylines for unprecedented heatwaves based on ensemble
+  boosting} {Storylines for unprecedented heatwaves based on ensemble
+  boosting}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Communications}{14}{1}{4643}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41467-023-40112-4}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41467-023-40112-4} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gessner%
+, Fischer%
+, Beyerle%
+\BCBL {}\ \BBA {} Knutti%
+}{%
+Gessner%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+gessner2021}
+\APACinsertmetastar {%
+gessner2021}%
+\begin{APACrefauthors}%
+Gessner, C.%
+, Fischer, E\BPBI M.%
+, Beyerle, U.%
+\BCBL {}\ \BBA {} Knutti, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Very Rare Heat Extremes: Quantifying and Understanding
+  Using Ensemble Reinitialization} {Very rare heat extremes: Quantifying and
+  understanding using ensemble reinitialization}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Climate}{34}{16}{6619 - 6634}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/clim/34/16/JCLI-D-20-0916.1.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1175/JCLI-D-20-0916.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hersbach%
+\ \protect \BOthers {.}}{%
+Hersbach%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+hersbach2020}
+\APACinsertmetastar {%
+hersbach2020}%
+\begin{APACrefauthors}%
+Hersbach, H.%
+, Bell, B.%
+, Berrisford, P.%
+, Hirahara, S.%
+, Horányi, A.%
+, Muñoz-Sabater, J.%
+\BDBL {}Thépaut, J\BHBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The ERA5 global reanalysis} {The era5 global
+  reanalysis}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Quarterly Journal of the Royal Meteorological
+  Society}{146}{730}{1999-2049}.
+\newblock
+\begin{APACrefURL}
+  \url{https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.3803}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1002/qj.3803} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Higuera%
+\ \BBA {} Abatzoglou%
+}{%
+Higuera%
+\ \BBA {} Abatzoglou%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+higuera2021}
+\APACinsertmetastar {%
+higuera2021}%
+\begin{APACrefauthors}%
+Higuera, P\BPBI E.%
+\BCBT {}\ \BBA {} Abatzoglou, J\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Record-setting climate enabled the extraordinary 2020
+  fire season in the western United States} {Record-setting climate enabled the
+  extraordinary 2020 fire season in the western united states}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Global Change Biology}{27}{1}{1-2}.
+\newblock
+\begin{APACrefURL}
+  \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.15388}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1111/gcb.15388} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hirschi%
+\ \protect \BOthers {.}}{%
+Hirschi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+hirschi2011}
+\APACinsertmetastar {%
+hirschi2011}%
+\begin{APACrefauthors}%
+Hirschi, M.%
+, Seneviratne, S\BPBI I.%
+, Alexandrov, V.%
+, Boberg, F.%
+, Boroneant, C.%
+, Christensen, O\BPBI B.%
+\BDBL {}Stepanek, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Observational evidence for soil-moisture impact on hot
+  extremes in southeastern Europe} {Observational evidence for soil-moisture
+  impact on hot extremes in southeastern europe}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Geoscience}{4}{1}{17--21}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/ngeo1032} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/ngeo1032} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hoell%
 \ \protect \BOthers {.}}{%
 Hoell%
@@ -39,6 +608,156 @@ Hoell, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Holden%
+\ \protect \BOthers {.}}{%
+Holden%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+holden2025}
+\APACinsertmetastar {%
+holden2025}%
+\begin{APACrefauthors}%
+Holden, Z\BPBI A.%
+, Swanson, A\BPBI K.%
+, Sadegh, M.%
+, Luce, C\BPBI H.%
+, Noonan-Wright, E.%
+\BCBL {}\ \BBA {} Parsons, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Soil Moisture is a Stronger Predictor of Forest Fire
+  Spread Potential Than Weather in the U.S. Northern Rocky Mountains} {Soil
+  moisture is a stronger predictor of forest fire spread potential than weather
+  in the u.s. northern rocky mountains}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{52}{16}{e2025GL116248}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2025GL116248}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2025GL116248 2025GL116248}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2025GL116248} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Huang%
+\ \protect \BOthers {.}}{%
+Huang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+huang2017}
+\APACinsertmetastar {%
+huang2017}%
+\begin{APACrefauthors}%
+Huang, B.%
+, Thorne, P\BPBI W.%
+, Banzon, V\BPBI F.%
+, Boyer, T.%
+, Chepurin, G.%
+, Lawrimore, J\BPBI H.%
+\BDBL {}Zhang, H\BHBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Extended Reconstructed Sea Surface Temperature, Version
+  5 (ERSSTv5): Upgrades, Validations, and Intercomparisons} {Extended
+  reconstructed sea surface temperature, version 5 (ersstv5): Upgrades,
+  validations, and intercomparisons}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Climate}{30}{20}{8179 - 8205}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/clim/30/20/jcli-d-16-0836.1.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1175/JCLI-D-16-0836.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jiang%
+\ \protect \BOthers {.}}{%
+Jiang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+jiang2025}
+\APACinsertmetastar {%
+jiang2025}%
+\begin{APACrefauthors}%
+Jiang, Y.%
+, Smerdon, J\BPBI E.%
+, Seager, R.%
+, Wang, G.%
+, Cook, B\BPBI I.%
+, Zheng, C.%
+\BDBL {}Williams, A\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Influence of Land-Surface Conditions on the
+  2020–2021 Western US Drought} {The influence of land-surface conditions on
+  the 2020–2021 western us drought}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Resources Research}{61}{5}{e2024WR038124}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024WR038124}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2024WR038124 2024WR038124}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2024WR038124} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kumar%
+, Merwade%
+, Kinter%
+\BCBL {}\ \BBA {} Niyogi%
+}{%
+Kumar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+kumar2013}
+\APACinsertmetastar {%
+kumar2013}%
+\begin{APACrefauthors}%
+Kumar, S.%
+, Merwade, V.%
+, Kinter, J\BPBI L.%
+\BCBL {}\ \BBA {} Niyogi, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Evaluation of Temperature and Precipitation Trends and
+  Long-Term Persistence in CMIP5 Twentieth-Century Climate Simulations}
+  {Evaluation of temperature and precipitation trends and long-term persistence
+  in cmip5 twentieth-century climate simulations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Climate}{26}{12}{4168 - 4185}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/clim/26/12/jcli-d-12-00259.1.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1175/JCLI-D-12-00259.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Mankin%
 \ \protect \BOthers {.}}{%
 Mankin%
@@ -70,6 +789,143 @@ Mankin, J\BPBI S.%
   Projections Program (U.S.)}.
 \newblock
 \begin{APACrefDOI} \doi{https://doi.org/10.25923/j0rj-an85} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Newman%
+\ \BBA {} Noy%
+}{%
+Newman%
+\ \BBA {} Noy%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+newman2023}
+\APACinsertmetastar {%
+newman2023}%
+\begin{APACrefauthors}%
+Newman, R.%
+\BCBT {}\ \BBA {} Noy, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The global costs of extreme weather that are
+  attributable to climate change} {The global costs of extreme weather that are
+  attributable to climate change}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Communications}{14}{1}{6103}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/s41467-023-41888-1}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41467-023-41888-1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Papalexiou%
+, Rajulapati%
+, Clark%
+\BCBL {}\ \BBA {} Lehner%
+}{%
+Papalexiou%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+papalexiou2020}
+\APACinsertmetastar {%
+papalexiou2020}%
+\begin{APACrefauthors}%
+Papalexiou, S\BPBI M.%
+, Rajulapati, C\BPBI R.%
+, Clark, M\BPBI P.%
+\BCBL {}\ \BBA {} Lehner, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Robustness of CMIP6 Historical Global Mean Temperature
+  Simulations: Trends, Long-Term Persistence, Autocorrelation, and
+  Distributional Shape} {Robustness of cmip6 historical global mean temperature
+  simulations: Trends, long-term persistence, autocorrelation, and
+  distributional shape}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth's Future}{8}{10}{e2020EF001667}.
+\newblock
+\begin{APACrefURL}
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020EF001667}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{e2020EF001667 2020EF001667}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1029/2020EF001667} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pascale%
+\ \protect \BOthers {.}}{%
+Pascale%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+pascale2017}
+\APACinsertmetastar {%
+pascale2017}%
+\begin{APACrefauthors}%
+Pascale, S.%
+, Boos, W\BPBI R.%
+, Bordoni, S.%
+, Delworth, T\BPBI L.%
+, Kapnick, S\BPBI B.%
+, Murakami, H.%
+\BDBL {}Zhang, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Weakening of the North American monsoon with global
+  warming} {Weakening of the north american monsoon with global
+  warming}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Climate Change}{7}{11}{806--812}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/nclimate3412} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/nclimate3412} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pendergrass%
+, Knutti%
+, Lehner%
+, Deser%
+\BCBL {}\ \BBA {} Sanderson%
+}{%
+Pendergrass%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+pendergrass2017}
+\APACinsertmetastar {%
+pendergrass2017}%
+\begin{APACrefauthors}%
+Pendergrass, A\BPBI G.%
+, Knutti, R.%
+, Lehner, F.%
+, Deser, C.%
+\BCBL {}\ \BBA {} Sanderson, B\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Precipitation variability increases in a warmer climate}
+  {Precipitation variability increases in a warmer climate}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scientific Reports}{7}{}{1}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -108,6 +964,71 @@ Rodgers, K\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Seager%
+\ \protect \BOthers {.}}{%
+Seager%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+seager2022}
+\APACinsertmetastar {%
+seager2022}%
+\begin{APACrefauthors}%
+Seager, R.%
+, Ting, M.%
+, Alexander, P.%
+, Nakamura, J.%
+, Liu, H.%
+, Li, C.%
+\BCBL {}\ \BBA {} Simpson, I\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Mechanisms of a Meteorological Drought Onset: Summer
+  2020 to Spring 2021 in Southwestern North America} {Mechanisms of a
+  meteorological drought onset: Summer 2020 to spring 2021 in southwestern
+  north america}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Climate}{35}{22}{7367 - 7385}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/clim/35/22/JCLI-D-22-0314.1.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1175/JCLI-D-22-0314.1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shepherd%
+}{%
+Shepherd%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+shepherd2014}
+\APACinsertmetastar {%
+shepherd2014}%
+\begin{APACrefauthors}%
+Shepherd, T\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Atmospheric circulation as a source of uncertainty in
+  climate change projections} {Atmospheric circulation as a source of
+  uncertainty in climate change projections}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Geoscience}{7}{10}{703--708}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/ngeo2253} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/ngeo2253} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Simpson%
 \ \protect \BOthers {.}}{%
 Simpson%
@@ -143,6 +1064,42 @@ Simpson, I\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Wieder%
+\ \protect \BOthers {.}}{%
+Wieder%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+wieder2022}
+\APACinsertmetastar {%
+wieder2022}%
+\begin{APACrefauthors}%
+Wieder, W\BPBI R.%
+, Kennedy, D.%
+, Lehner, F.%
+, Musselman, K\BPBI N.%
+, Rodgers, K\BPBI B.%
+, Rosenbloom, N.%
+\BDBL {}Yamaguchi, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Pervasive alterations to snow-dominated ecosystem
+  functions under climate change} {Pervasive alterations to snow-dominated
+  ecosystem functions under climate change}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the National Academy of
+  Sciences}{119}{30}{e2202393119}.
+\newblock
+\begin{APACrefURL} \url{https://www.pnas.org/doi/abs/10.1073/pnas.2202393119}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1073/pnas.2202393119} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Williams%
 , Cook%
 \BCBL {}\ \BBA {} Smerdon%
@@ -173,6 +1130,42 @@ Williams, A\BPBI P.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1038/s41558-022-01290-z} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wu%
+\ \protect \BOthers {.}}{%
+Wu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+wu2024}
+\APACinsertmetastar {%
+wu2024}%
+\begin{APACrefauthors}%
+Wu, Y.%
+, Miao, C.%
+, Slater, L.%
+, Fan, X.%
+, Chai, Y.%
+\BCBL {}\ \BBA {} Sorooshian, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Hydrological Projections under CMIP5 and CMIP6: Sources
+  and Magnitudes of Uncertainty} {Hydrological projections under cmip5 and
+  cmip6: Sources and magnitudes of uncertainty}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bulletin of the American Meteorological
+  Society}{105}{1}{E59 - E74}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.ametsoc.org/view/journals/bams/105/1/BAMS-D-23-0104.1.xml}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1175/BAMS-D-23-0104.1} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
